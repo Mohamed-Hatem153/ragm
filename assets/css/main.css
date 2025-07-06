@@ -7475,7 +7475,7 @@ a, a:hover {
   font-family: fontReg;
 }
 
-.text-blk.section-head {
+.text-blk.section-header {
   max-width: 750px;
   font-size: 22px;
   line-height: 30px;
@@ -7536,13 +7536,13 @@ a, a:hover {
   .text-blk.section-text {
     font-size: 18px;
   }
-  .text-blk.section-head {
+  .text-blk.section-header {
     font-size: 40px;
     line-height: 45px;
   }
 }
 @media (max-width: 500px) {
-  .text-blk.section-head {
+  .text-blk.section-header {
     font-size: 30px;
     line-height: 35px;
   }
