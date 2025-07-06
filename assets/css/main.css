@@ -36,7 +36,6 @@
 /* Grid */
 /* translate */
 /* translate */
-@import 'https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:300,400';
 * {
   border: 0;
   margin: 0;
@@ -4559,7 +4558,7 @@ html[lang=ar] .about-imgs .img2 {
 }
 .about-card .about-card-top {
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   justify-content: space-between;
   gap: 15px;
   margin-bottom: 25px;
@@ -4705,7 +4704,7 @@ html[lang=ar] .about-card .text {
   background-color: #0c0a18;
   color: white;
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   justify-content: center;
   padding: 2rem 1rem;
   height: 80vh;
@@ -5218,7 +5217,7 @@ html[lang=ar] .about-content1 .about-img1::after {
 
 .about-right-flex {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   gap: 30px;
 }
 .about-right-flex .about-tabs-container {
@@ -6300,7 +6299,7 @@ html[lang=ar] .customer_review .customer-img::after {
 @media screen and (max-width: 992px) {
   .legal_con {
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     gap: 15px;
   }
 }
@@ -6706,7 +6705,7 @@ html[lang=ar] .our-numbers .number-items .number-item .img {
 /********************* Start blog_con section *********************/
 .blog_con {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   gap: 50px;
 }
 @media screen and (max-width: 992px) {
@@ -7237,7 +7236,7 @@ a, a:hover {
 }
 .pure_tabs .slider {
   position: relative;
-  width: 20%;
+  width: calc(100% / 5);
   transition: all 0.33s cubic-bezier(0.38, 0.8, 0.32, 1.07);
 }
 .pure_tabs .slider .indicator {
@@ -7284,13 +7283,13 @@ a, a:hover {
 .pure_tabs input[name=tab-control]:nth-of-type(1):checked ~ ul > li:nth-child(1) > label svg {
   fill: #155ef5;
 }
-@media (max-width: 750px) {
+@media (max-width: calc(750px)) {
   .pure_tabs input[name=tab-control]:nth-of-type(1):checked ~ ul > li:nth-child(1) > label {
     background: rgba(0, 0, 0, 0.08);
   }
 }
 .pure_tabs input[name=tab-control]:nth-of-type(1):checked ~ .slider {
-  transform: translateX(0%);
+  transform: translateX(calc(-100% * (1 - 1)));
 }
 .pure_tabs input[name=tab-control]:nth-of-type(1):checked ~ .content > section:nth-child(1) {
   display: block;
@@ -7302,13 +7301,13 @@ a, a:hover {
 .pure_tabs input[name=tab-control]:nth-of-type(2):checked ~ ul > li:nth-child(2) > label svg {
   fill: #155ef5;
 }
-@media (max-width: 750px) {
+@media (max-width: calc(750px)) {
   .pure_tabs input[name=tab-control]:nth-of-type(2):checked ~ ul > li:nth-child(2) > label {
     background: rgba(0, 0, 0, 0.08);
   }
 }
 .pure_tabs input[name=tab-control]:nth-of-type(2):checked ~ .slider {
-  transform: translateX(-100%);
+  transform: translateX(calc(-100% * (2 - 1)));
 }
 .pure_tabs input[name=tab-control]:nth-of-type(2):checked ~ .content > section:nth-child(2) {
   display: block;
@@ -7320,13 +7319,13 @@ a, a:hover {
 .pure_tabs input[name=tab-control]:nth-of-type(3):checked ~ ul > li:nth-child(3) > label svg {
   fill: #155ef5;
 }
-@media (max-width: 750px) {
+@media (max-width: calc(750px)) {
   .pure_tabs input[name=tab-control]:nth-of-type(3):checked ~ ul > li:nth-child(3) > label {
     background: rgba(0, 0, 0, 0.08);
   }
 }
 .pure_tabs input[name=tab-control]:nth-of-type(3):checked ~ .slider {
-  transform: translateX(-200%);
+  transform: translateX(calc(-100% * (3 - 1)));
 }
 .pure_tabs input[name=tab-control]:nth-of-type(3):checked ~ .content > section:nth-child(3) {
   display: block;
@@ -7338,13 +7337,13 @@ a, a:hover {
 .pure_tabs input[name=tab-control]:nth-of-type(4):checked ~ ul > li:nth-child(4) > label svg {
   fill: #155ef5;
 }
-@media (max-width: 750px) {
+@media (max-width: calc(750px)) {
   .pure_tabs input[name=tab-control]:nth-of-type(4):checked ~ ul > li:nth-child(4) > label {
     background: rgba(0, 0, 0, 0.08);
   }
 }
 .pure_tabs input[name=tab-control]:nth-of-type(4):checked ~ .slider {
-  transform: translateX(-300%);
+  transform: translateX(calc(-100% * (4 - 1)));
 }
 .pure_tabs input[name=tab-control]:nth-of-type(4):checked ~ .content > section:nth-child(4) {
   display: block;
@@ -7356,13 +7355,13 @@ a, a:hover {
 .pure_tabs input[name=tab-control]:nth-of-type(5):checked ~ ul > li:nth-child(5) > label svg {
   fill: #155ef5;
 }
-@media (max-width: 750px) {
+@media (max-width: calc(750px)) {
   .pure_tabs input[name=tab-control]:nth-of-type(5):checked ~ ul > li:nth-child(5) > label {
     background: rgba(0, 0, 0, 0.08);
   }
 }
 .pure_tabs input[name=tab-control]:nth-of-type(5):checked ~ .slider {
-  transform: translateX(-400%);
+  transform: translateX(calc(-100% * (5 - 1)));
 }
 .pure_tabs input[name=tab-control]:nth-of-type(5):checked ~ .content > section:nth-child(5) {
   display: block;
@@ -7377,7 +7376,7 @@ a, a:hover {
     transform: translateY(0%);
   }
 }
-@media (max-width: 1250px) {
+@media (max-width: calc(1250px)) {
   .pure_tabs ul li label {
     white-space: initial;
   }
@@ -7388,7 +7387,7 @@ a, a:hover {
     height: 1.5em;
   }
 }
-@media (max-width: 750px) {
+@media (max-width: calc(750px)) {
   .pure_tabs ul li label {
     padding: 5px;
     border-radius: 5px;
@@ -7602,7 +7601,7 @@ html[lang=ar] .services-details .services_det_img::after {
 }
 @media screen and (max-width: 425px) {
   .comment {
-    align-items: start;
+    align-items: flex-start;
   }
   .comment .user_img {
     border-radius: 50%;
