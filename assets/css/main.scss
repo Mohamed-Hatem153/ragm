@@ -3561,19 +3561,6 @@ $content-selector: "~ .content > section";
 .responsive-cell-block {
   min-height: 75px;
 }
-
-// * {
-//   font-family: Nunito, sans-serif;
-// }
-
-// a {
-//   text-decoration-line: none;
-//   text-decoration-thickness: initial;
-//   text-decoration-style: initial;
-//   text-decoration-color: initial;
-//   color: inherit;
-// }
-
 .text-blk {
   margin-top: 0px;
   margin-right: 0px;
@@ -3753,20 +3740,6 @@ $content-selector: "~ .content > section";
     margin-left: 0px;
   }
 }
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&amp;display=swap');
-
-*,
-*:before,
-*:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-}
-
 .wk-desk-1 {
   width: 8.333333%;
 }

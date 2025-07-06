@@ -36,7 +36,6 @@
 /* Grid */
 /* translate */
 /* translate */
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&amp;display=swap");
 * {
   border: 0;
   margin: 0;
@@ -7579,16 +7578,6 @@ a, a:hover {
     margin-left: 0px;
   }
 }
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-}
-
 .wk-desk-1 {
   width: 8.333333%;
 }
