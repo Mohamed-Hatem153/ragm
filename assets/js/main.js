@@ -3,12 +3,6 @@ $(window).on("load", function () {
   $(".loader-container").delay(300).fadeOut(1000);
 });
 
-// Add Sticky Header
-// window.addEventListener('scroll', function () {
-//   var header = document.querySelector('.page-navbar');
-//   header.classList.toggle('scroll', window.pageYOffset > 100);
-// });
-
 // SideBar
 $(".side-open").on("click", function () {
   $(".links").addClass("active");
