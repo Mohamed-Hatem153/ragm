@@ -52,7 +52,7 @@
 
   .footer-title {
     font-size: 14px;
-    color: $dark !important;
+    color: $black !important;
     line-height: 1.9;
 
     @media (max-width: 550px) {
@@ -73,9 +73,9 @@
       display: block;
       padding: 0 60px 15px;
       font-size: 22px;
-      color: #666666;
+      color: $black;
       margin-bottom: 15px;
-      border-bottom: 1px solid #666666;
+      border-bottom: 1px solid $black;
 
       @media (max-width: 425px) {
         padding: 0 25px 15px;
@@ -94,7 +94,7 @@
     .foot-title,
     .main-foot-title {
       font-size: 15px;
-      color: $dark !important;
+      color: $black !important;
       position: relative;
       font-weight: 500;
 
@@ -149,7 +149,7 @@
 
       .act-befor {
         font-size: 14px;
-        color: $dark !important;
+        color: $black !important;
         display: flex;
         align-items: center;
         position: relative;
@@ -225,7 +225,7 @@
 
       .link-footer {
         font-size: 18px;
-        color: #666666;
+        color: $black;
 
         @media (max-width: $screen-md) {
           font-size: 17px;
@@ -270,7 +270,7 @@
       .hint-menue {
         display: block;
         font-size: 17px;
-        color: #666666;
+        color: $black;
 
         @media (max-width: $screen-md) {
           font-size: 15px;
@@ -398,7 +398,7 @@
 .copy_sec{
   border-top: 1px solid rgba($color: $dark, $alpha: .2);
   text-align: center;
-  // color: $white;
+  color: $black;
   margin-top: 35px;
   padding-top: 20px;
 }

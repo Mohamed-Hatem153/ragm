@@ -789,57 +789,91 @@
   }
 }
 
-.main-title {
-  color: $black;
-  font-size: 17px;
-  position: relative;
-  width: fit-content;
-  font-family: fontBold;
-  // font-family: fontDemi;
+// .main-title {
+//   color: $black;
+//   font-size: 17px;
+//   position: relative;
+//   width: fit-content;
+//   font-family: fontBold;
+//   // font-family: fontDemi;
 
-  @media screen and (max-width: $screen-xs) {
-    font-size: 15px;
-  }
+//   @media screen and (max-width: $screen-xs) {
+//     font-size: 15px;
+//   }
 
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    height: 3px;
-    background-color: $main;
-    bottom: -10px;
-    border-radius: 15px;
-  }
+//   &::before,
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     height: 3px;
+//     background-color: $main;
+//     bottom: -10px;
+//     border-radius: 15px;
+//   }
 
-  &::before {
-    @include dir-left(0);
-    width: calc(100% - 13px);
-  }
+//   &::before {
+//     @include dir-left(0);
+//     width: calc(100% - 13px);
+//   }
 
-  &::after {
-    @include dir-right(0);
-    width: 10px;
-  }
+//   &::after {
+//     @include dir-right(0);
+//     width: 10px;
+//   }
 
-  @media screen and (max-width: $screen-sm) {
-    font-size: 17px;
-  }
+//   @media screen and (max-width: $screen-sm) {
+//     font-size: 17px;
+//   }
 
-  @media screen and (max-width: $screen-xs) {
-    font-size: 16px;
-  }
+//   @media screen and (max-width: $screen-xs) {
+//     font-size: 16px;
+//   }
 
-  &.sm {
-    font-size: 16px;
-  }
-}
+//   &.sm {
+//     font-size: 16px;
+//   }
+// }
+
+ .main-title {
+     font-size: 26px;
+     margin-bottom: 15px;
+     color: $main;
+     font-weight: bold;
+     text-align: center;
+     display: inline-flex;
+     position: relative;
+     padding: 0px 20px;
+     z-index: 2
+ }
+
+ .main-title:after,
+ .main-title:before {
+     content: "";
+     display: block;
+     width: 25px;
+     height: 25px;
+     background: #d4d5d799;
+     position: absolute;
+     top: -5px;
+     right: 0;
+     z-index: -1
+ }
+
+ .main-title:after {
+     top: unset;
+     right: unset;
+     bottom: -5px;
+     left: 0;
+     width: 15px;
+     height: 15px;
+ }
 
 .sec-title {
   font-size: 14px;
   color: $black;
   width: fit-content;
   margin-bottom: 20px;
-  margin-top: 25px;
+  margin-top: 10px;
   font-family: fontMed;
   font-weight: 600;
 }

@@ -4,10 +4,10 @@ $(window).on("load", function () {
 });
 
 // Add Sticky Header
-window.addEventListener('scroll', function () {
-  var header = document.querySelector('.page-navbar');
-  header.classList.toggle('scroll', window.pageYOffset > 100);
-});
+// window.addEventListener('scroll', function () {
+//   var header = document.querySelector('.page-navbar');
+//   header.classList.toggle('scroll', window.pageYOffset > 100);
+// });
 
 // SideBar
 $(".side-open").on("click", function () {
@@ -78,8 +78,87 @@ $('.about-open').click(function (e) {
   }
 });
 
+$(document).ready(function () {
+    "use strict";
+    $(".close-open-nav").on("click", function (e) {
+        e.stopPropagation();
+        $(this).toggleClass("active");
+        if ($(this).hasClass("active")) {
+            $(".nav_bar").addClass("active");
+
+        } else {
+            $(".nav_bar").removeClass("active");
+        }
+    });
+
+    $("body").on("click", function () {
+        $(".close-open-nav.active").click();
+    });
+    /*
+        $(".nav_bar a").each(
+            function () {
+                if (window.location.href.includes($(this).attr('href'))) {
+                    $(this).parent('li').addClass("active");
+                    $(this).parent().parent('.sub-menu').slideDown("");
+                }
+            }
+        );
+        */
+
+
+    var owl_index = $(".owl_index .item").outerHeight();
+    var header = $("header").outerHeight();
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > owl_index + header) {
+            $(".back-to-top").addClass("active");
+            $("header").addClass("fixed");
+        } else {
+            $(".back-to-top").removeClass("active");
+            $("header").removeClass("fixed");
+        }
+    });
+
+
+
+    $(".back-to-top").on("click", function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 500);
+    });
+
+
+    $(".foot_wol button").on("click", function () {
+        $("html, body").animate({
+            scrollTop: owl_index + header
+        }, 500);
+
+    });
+});
+
 /******************* All Sliders *******************/
 $(document).ready(function () {
+
+  $('.owl_index').owlCarousel({
+        animateOut: 'slideOutUp',
+        loop: true,
+        margin: 10,
+        dots: true,
+        nav: false,
+        mouseDrag: false,
+        autoplay: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+    });
 
   /************ services Carousel ***********/
   let isRtl = $('html[lang="ar"]').length > 0;
@@ -163,6 +242,38 @@ $(document).ready(function () {
     }, 0.1);
   });
   owlclients.owlCarousel({
+    items: 2,
+    loop: true,
+    rtl: isRtl,
+    margin: 35,
+    dots: false,
+    autoplay: true,
+    slideTransition: "linear",
+    autoplayTimeout: 2800,
+    autoplaySpeed: 2800,
+    autoplayHoverPause: true,
+    responsive: {
+      1000: {
+        items: 6,
+      },
+      800: {
+        items: 4,
+      },
+      400: {
+        items: 3,
+        margin: 20,
+      },
+    },
+  });
+
+  const owlfields = $(".fields-slider");
+
+  owlfields.on("changed.owl.carousel", function (event) {
+    setTimeout(() => {
+      owlfields.find(".owl-stage-outer").addClass("py-3");
+    }, 0.1);
+  });
+  owlfields.owlCarousel({
     items: 2,
     loop: true,
     rtl: isRtl,

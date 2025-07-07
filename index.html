@@ -15,6 +15,9 @@
     <!-- Owl Carousel -->
     <link rel="stylesheet" href="./assets/plugins/OwlCarousel2-2.3.4/dist_2/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="./assets/plugins/OwlCarousel2-2.3.4/dist_2/assets/owl.theme.default.min.css">
+
+    <!-- plugins CSS -->
+    <!-- <link rel="stylesheet" href="./assets/plugins/owl-carousel/css/owl.carousel.min.css"> -->
     <!-- fancybox -->
     <link rel="stylesheet" href="./assets/plugins/FancyBox/jquery.fancybox.min.css">
     <!-- Select 2 -->
@@ -46,7 +49,7 @@
 
 
     <!-- Start Social Section -->
-    <div class="social-icon">
+    <!-- <div class="social-icon">
         <div class="text">تابعنا عبر</div>
         <span></span>
         <a href="#" class="social">
@@ -61,161 +64,158 @@
         <a href="#" class="social">
             <i class="fa-brands fa-youtube ic"></i>
         </a>
-    </div>
+    </div> -->
     <!-- End Social Section -->
 
 
-    <!-- Start Navbar -->
-    <nav class="page-navbar">
+        <!-- Start Navbar -->
+    <header>
         <div class="container">
-            <div class="navbar-content">
-
-                <a href="index.html" class="logo">
-                    <img loading="lazy" src="./assets/imgs/logo.webp" alt="" class="logo-img">
-                </a>
-
-                <div class="links">
-                    <a href="index.html" class="logo">
-                        <img loading="lazy" src="./assets/imgs/logo.webp" alt="logo">
-                    </a>
-
-                    <a href="index.html" class="link">الرئيسية</a>
-
-                    <a href="features.html" class="link">المميزات</a>
-
-                    <a href="our-services2.html" class="link">الباقات</a>
-                    <a href="our-services.html" class="link">خدماتنا</a>
-                    <a href="blog.html" class="link">المدونة</a>
-                    <a href="asked-questions.html" class="link">الاسئلة الشائعة</a>
-                    <a href="contact-us.html" class="link">اتصل بنا</a>
-                    <div class="more_nav">
-                        <span class="link">المزيد</span>
-                        <div class="more_dropdown">
-                            <a href="index.html" class="more_l">طلب توظيف</a>
-                            <a href="index.html" class="more_l">طلب تدريب</a>
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="index.html"><img src="./assets/imgs/logo.webp" class="the_logo"></a>
+                    <ul class="d-flex align-items-center nav_bar">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="#who-we">من نحن</a></li>
+                        <li><a href="features.html">المميزات</a></li>
+                        <li><a href="our-services2.html">الباقات</a></li>
+                        <li>
+                            <a href="our-services.html">خدماتنا</a>
+                        </li>
+                        <li>
+                            <a href="blog.html">المدونة</a>
+                        </li>
+                        <li>
+                            <a href="asked-questions.html">الاسئلة الشائعة</a>
+                        </li>
+                        <li>
+                            <a href="contact-us.html">اتصل بنا</a>
+                        </li>
+                        <li>
+                            <a>المزيد</a>
+                            <ul class="list_nav">
+                                <li>
+                                    <a href="index.html">طلب توظيف</a>
+                                    <!-- <ul>
+                                        <li><a href="education-systems.html">انظمة اداره التعيم</a></li>
+                                    </ul> -->
+                                </li>
+                                <li><a href="index.html">طلب تدريب</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                
+                <div class="d-flex align-items-center">
+                    <a href="" class="btn_lang">En</a>
+                    <div class="close-open-nav">
+                        <div>
+                            <span></span>
+                            <span></span>
+                            <span></span>
                         </div>
                     </div>
                 </div>
-
-                <div class="nav-icons">
-
-                    <div class="dropdown">
-                        <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fa-solid fa-globe drop-ic"></i>
-                            <span class="lang drop-text">العربية</span>
-                            <i class="fa-solid fa-angle-down drop-ic"></i>
-                        </button>
-
-                        <ul class="dropdown-menu left drop-lang">
-                            <li>
-                                <a href="#" class="lang-item">
-                                    <img loading="lazy" src="./assets/imgs/icons/download.png" class="ic" alt="">
-                                    العربية
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="lang-item">
-                                    <img loading="lazy" src="./assets/imgs/icons/download_en.png" class="ic" alt="">
-                                    English
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <a href="index.html" class="main-btn up">تجربة مجانية</a>
-
-                    <div class="nav-ic side-open">
-                        <i class="fa-solid fa-bars ic"></i>
-                    </div>
-
-                </div>
-
-
             </div>
         </div>
-    </nav>
+    </header>
     <!-- End Navbar -->
 
 
 
     <!-- Start Home Slider -->
-    <section class="home-sec">
-        <div class="owl-carousel home-slider">
-
-            <div class="home-item">
-                <img loading="lazy" src="./assets/imgs/word-image-62.webp" alt=""
-                    class="home-img">
-                <div class='container'>
-                    <div class="content">
-                        <h1 class="title text-center wow fadeInDown">برنامج رقم للمحاسبة والمبيعات</h1>
-                        <p class='desc wow fadeInLeft'>
-                            نشاطك..رقم , أسهل برنامج محاسبة ومبيعات عربي سحابي فهو الأسهل الذى يدعم متطلبات الفاتورة الإلكترونية وإدارة حساباتك المالية بسهولة أيا كان نشاطك
-                        </p>
-                        <a href="index.html" class="main-btn up fs14 wow fadeInUp">أطلب نسخة مجانية الان</a>
-                    </div>
+<div class="po_R">
+             <div class="owl-carousel owl-theme owl_index">
+                <div class="item">
+                    <img src="./assets/imgs/adomas-2.jpg" alt="images not found">
+                    <div class="cover">
+                        <div class="container">
+                            <div class="header-content">
+                                <div class="line animated bounceInLeft"></div>
+                                <h2>مرحباً بكم في عالم رقم</h2>
+                                <h1>تعريف جديد</h1>
+                                <h4>رسالتنا تمكين كل فرد من الوصول لأعلى إمكانيّاته بأبسط طريقة ممكنة ، عبر استخدام أفضل حلول التعلم المبتكرة والملهمة </h4>
+                            </div>
+                        </div>
+                     </div>
+                </div> 
+                <div class="item">
+                    <img src="./assets/imgs/adomas-1.jpg" alt="images not found">
+                    <div class="cover">
+                        <div class="container">
+                            <div class="header-content">
+                                <div class="line"></div>
+                                <h2>مرحباً بكم في عالم رقم </h2>
+                                <h1>التحول الرقمي</h1>
+                                <h4>أسهل برنامج محاسبة ومبيعات عربي سحابي فهو الأسهل الذى يدعم متطلبات الفاتورة الإلكترونية وإدارة حساباتك المالية بسهولة أيا كان نشاطك</h4>
+                            </div>
+                        </div>
+                     </div>
+                </div>                                   
+                <div class="item">
+                    <img src="./assets/imgs/adomas-3.jpg" alt="images not found">
+                    <div class="cover">
+                        <div class="container">
+                            <div class="header-content">
+                                <div class="line animated bounceInLeft"></div>
+                                <h2>مرحباً بكم في عالم رقم</h2>
+                                <h1>تطور حقيقي</h1>
+                                <h4>حيث الواجهات التى تدعم تعدد اللغات العربية والإنجليزية ، وتسجيل الفواتير وطباعتها وارسالها عن طريق الواتس اب من خلال رقم نشاطك الخاص </h4>
+                            </div>
+                        </div>
+                     </div>
                 </div>
             </div>
-
-            <div class="home-item">
-                <img loading="lazy" src="./assets/imgs/img2.jpg" alt=""
-                    class="home-img">
-                <div class='container'>
-                    <div class="content">
-                        <h1 class="title text-center wow fadeInDown">برنامج رقم للمحاسبة والمبيعات</h1>
-                        <p class='desc wow fadeInLeft'>
-                            حيث الواجهات التى تدعم تعدد اللغات العربية والإنجليزية ، وتسجيل الفواتير وطباعتها وارسالها عن طريق الواتس اب من خلال رقم نشاطك الخاص
-                        </p>
-                        <a href="index.html" class="main-btn up fs14 wow fadeInUp">أطلب نسخة مجانية الان</a>
-                    </div>
-                </div>
+            <div class="foot_wol">
+                <ul class="d-flex">
+                    <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                </ul>
+                <button type="button"><i class="fas fa-circle"></i></button>
+                <div>جميع الحقوق محفوظة رقم © 2025</div>
             </div>
-
-            <div class="home-item">
-                <img loading="lazy" src="./assets/imgs/img4.jpg" alt="" class="home-img">
-                <div class='container'>
-                    <div class="content">
-                        <h1 class="title text-center wow fadeInDown">برنامج رقم للمحاسبة والمبيعات</h1>
-                        <p class='desc wow fadeInLeft'>
-                            بالإضافة الى تسجيل وادارة مشترياتك ومراقبة المستودعات ، كل هذا لتنظيم وإدارة نشاطك بشكل رقمي إحترافي..
-                        </p>
-                        <a href="index.html" class="main-btn up fs14 wow fadeInUp">أطلب نسخة مجانية الان</a>
-                    </div>
-                </div>
-            </div>
-
         </div>
-        <div class="elementor-shape elementor-shape-bottom" data-negative="false">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.5 27.8" preserveAspectRatio="none">
-                <path class="elementor-shape-fill" fill="#fff"
-                    d="M283.5,9.7c0,0-7.3,4.3-14,4.6c-6.8,0.3-12.6,0-20.9-1.5c-11.3-2-33.1-10.1-44.7-5.7	s-12.1,4.6-18,7.4c-6.6,3.2-20,9.6-36.6,9.3C131.6,23.5,99.5,7.2,86.3,8c-1.4,0.1-6.6,0.8-10.5,2c-3.8,1.2-9.4,3.8-17,4.7	c-3.2,0.4-8.3,1.1-14.2,0.9c-1.5-0.1-6.3-0.4-12-1.6c-5.7-1.2-11-3.1-15.8-3.7C6.5,9.2,0,10.8,0,10.8V0h283.5V9.7z M260.8,11.3	c-0.7-1-2-0.4-4.3-0.4c-2.3,0-6.1-1.2-5.8-1.1c0.3,0.1,3.1,1.5,6,1.9C259.7,12.2,261.4,12.3,260.8,11.3z M242.4,8.6	c0,0-2.4-0.2-5.6-0.9c-3.2-0.8-10.3-2.8-15.1-3.5c-8.2-1.1-15.8,0-15.1,0.1c0.8,0.1,9.6-0.6,17.6,1.1c3.3,0.7,9.3,2.2,12.4,2.7	C239.9,8.7,242.4,8.6,242.4,8.6z M185.2,8.5c1.7-0.7-13.3,4.7-18.5,6.1c-2.1,0.6-6.2,1.6-10,2c-3.9,0.4-8.9,0.4-8.8,0.5	c0,0.2,5.8,0.8,11.2,0c5.4-0.8,5.2-1.1,7.6-1.6C170.5,14.7,183.5,9.2,185.2,8.5z M199.1,6.9c0.2,0-0.8-0.4-4.8,1.1	c-4,1.5-6.7,3.5-6.9,3.7c-0.2,0.1,3.5-1.8,6.6-3C197,7.5,199,6.9,199.1,6.9z M283,6c-0.1,0.1-1.9,1.1-4.8,2.5s-6.9,2.8-6.7,2.7	c0.2,0,3.5-0.6,7.4-2.5C282.8,6.8,283.1,5.9,283,6z M31.3,11.6c0.1-0.2-1.9-0.2-4.5-1.2s-5.4-1.6-7.8-2C15,7.6,7.3,8.5,7.7,8.6	C8,8.7,15.9,8.3,20.2,9.3c2.2,0.5,2.4,0.5,5.7,1.6S31.2,11.9,31.3,11.6z M73,9.2c0.4-0.1,3.5-1.6,8.4-2.6c4.9-1.1,8.9-0.5,8.9-0.8	c0-0.3-1-0.9-6.2-0.3S72.6,9.3,73,9.2z M71.6,6.7C71.8,6.8,75,5.4,77.3,5c2.3-0.3,1.9-0.5,1.9-0.6c0-0.1-1.1-0.2-2.7,0.2	C74.8,5.1,71.4,6.6,71.6,6.7z M93.6,4.4c0.1,0.2,3.5,0.8,5.6,1.8c2.1,1,1.8,0.6,1.9,0.5c0.1-0.1-0.8-0.8-2.4-1.3	C97.1,4.8,93.5,4.2,93.6,4.4z M65.4,11.1c-0.1,0.3,0.3,0.5,1.9-0.2s2.6-1.3,2.2-1.2s-0.9,0.4-2.5,0.8C65.3,10.9,65.5,10.8,65.4,11.1	z M34.5,12.4c-0.2,0,2.1,0.8,3.3,0.9c1.2,0.1,2,0.1,2-0.2c0-0.3-0.1-0.5-1.6-0.4C36.6,12.8,34.7,12.4,34.5,12.4z M152.2,21.1	c-0.1,0.1-2.4-0.3-7.5-0.3c-5,0-13.6-2.4-17.2-3.5c-3.6-1.1,10,3.9,16.5,4.1C150.5,21.6,152.3,21,152.2,21.1z">
-                </path>
-                <path class="elementor-shape-fill" fill="#fff"
-                    d="M269.6,18c-0.1-0.1-4.6,0.6-7.2,0c-7.3-0.7-17-3.2-16.6-2.9c0.4,0.3,13.7,3.1,17,3.3	C267.7,18.8,269.7,18,269.6,18z">
-                </path>
-                <path class="elementor-shape-fill" fill="#fff"
-                    d="M227.4,9.8c-0.2-0.1-4.5-1-9.5-1.2c-5-0.2-12.7,0.6-12.3,0.5c0.3-0.1,5.9-1.8,13.3-1.2	S227.6,9.9,227.4,9.8z">
-                </path>
-                <path class="elementor-shape-fill" fill="#fff"
-                    d="M204.5,13.4c-0.1-0.1,2-1,3.2-1.1c1.2-0.1,2,0,2,0.3c0,0.3-0.1,0.5-1.6,0.4	C206.4,12.9,204.6,13.5,204.5,13.4z">
-                </path>
-                <path class="elementor-shape-fill" fill="#fff"
-                    d="M201,10.6c0-0.1-4.4,1.2-6.3,2.2c-1.9,0.9-6.2,3.1-6.1,3.1c0.1,0.1,4.2-1.6,6.3-2.6	S201,10.7,201,10.6z">
-                </path>
-                <path class="elementor-shape-fill" fill="#fff"
-                    d="M154.5,26.7c-0.1-0.1-4.6,0.3-7.2,0c-7.3-0.7-17-3.2-16.6-2.9c0.4,0.3,13.7,3.1,17,3.3	C152.6,27.5,154.6,26.8,154.5,26.7z">
-                </path>
-                <path class="elementor-shape-fill" fill="#fff"
-                    d="M41.9,19.3c0,0,1.2-0.3,2.9-0.1c1.7,0.2,5.8,0.9,8.2,0.7c4.2-0.4,7.4-2.7,7-2.6	c-0.4,0-4.3,2.2-8.6,1.9c-1.8-0.1-5.1-0.5-6.7-0.4S41.9,19.3,41.9,19.3z">
-                </path>
-                <path class="elementor-shape-fill" fill="#fff"
-                    d="M75.5,12.6c0.2,0.1,2-0.8,4.3-1.1c2.3-0.2,2.1-0.3,2.1-0.5c0-0.1-1.8-0.4-3.4,0	C76.9,11.5,75.3,12.5,75.5,12.6z">
-                </path>
-                <path class="elementor-shape-fill" fill="#fff"
-                    d="M15.6,13.2c0-0.1,4.3,0,6.7,0.5c2.4,0.5,5,1.9,5,2c0,0.1-2.7-0.8-5.1-1.4	C19.9,13.7,15.7,13.3,15.6,13.2z">
-                </path>
-            </svg>
-        </div>
-    </section>
     <!-- End Home Slider -->
+
+            <section class="sec-marg mb-0" id="who-we">
+            <div class="container">
+                <!-- <div class="text-center">
+                    <div class="the_Title wow bounceIn" data-wow-duration="2s">من نحن</div>
+                </div> -->
+                <div class="header-section text-center">
+						<h4 class="main-title mx-auto" data-aos="fade-up" data-aos-delay="200">
+                         من نحن
+                        <span class="line"></span>
+                        </h4>
+					</div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="item_who_we wow fadeInUp">
+                            <h3>قصتنا</h3>
+                            <p>الاعتماد على الأساليب التقليدية في المحاسبة والمبيعات لا يكفي في مواجهة التطور التكنولوجي، لذلك أصبح برنامج محاسبي سحابى ضرورة للتعامل مع العمليات التجارية، وتقليل التكاليف، وحماية البيانات، وبرنامج رقم هو برنامج محاسبة ومبيعات ونظام كامل يستهدف الشركات الصغيرة والمتوسطة، ويُسهل عليها إدارة حساباتك ومبيعاتك، لأنه يعتمد على التقنية السحابية، ويوفر وصول مرن إلى البيانات في أي وقت ومن أي مكان مما يتيح لك زيادة كفاءة أعمالك، ويقدم إليك كل ما تحتاج إليه لإدارة شركتك.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="item_who_we wow fadeInUp">
+                            <h3>رؤيتنا</h3>
+                            <p>يساعدك برنامج المحاسبة العامة في تسجيل الإيرادات والمصروفات، ومتابعة الحسابات حتى تتعرف على وضع شركتك المالي بدقة، ويعد فواتير البيع والشراء ويرسلها إلى العملاء والموردين، كما أنه يتيح لك تتبع المخزون ومعرفة الكميات المتوفرة حتى تتجنب نقص أو زيادة المخزون، ويمكنك من خلاله تحسين خدماتك، وزيادة ولاء العملاء، لأنه يوفر أدوات لمتابعة حركة المبيعات وفهم سلوك العملاء، ويقدم تقارير مالية دقيقة تشمل الأرباح والخسائر والميزانية.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="item_who_we wow fadeInUp">
+                            <h3>بيئة العمل</h3>
+                            <p>يمكن الوصول إلى البرنامج من أي جهاز متصل بالإنترنت، وبالتالي يمكنك إدارة أعمالك من أي مكان، ويعتمد على التقنية السحابية، لذلك لن تحتاج إلى شراء أجهزة أو برامج إضافية أو دفع تكاليف صيانة، ويتم تحديثه تلقائيًا حتى تحصل على أحدث الميزات والتقنيات دون أن تحتاج إلى تنزيل أو تثبيت خارجي، ويتكامل مع برنامج إدارة علاقات العملاء (CRM) والبريد الإلكتروني ويُسهل عليك تبادل المعلومات.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="item_who_we wow fadeInUp">
+                            <h3>هدفنا</h3>
+                            <p>برنامج “رقم” للمحاسبة والمبيعات يساعدك في إدارة كل ما يخص المحاسبة والمبيعات بسهولة. هذه الجوانب مهمة جدًا لنجاح أي عمل، سواء كان صغيرًا أو كبيرًا. ومع التقدم التكنولوجي، أصبح استخدام برامج المحاسبة السحابية ضروريًا لتحسين العمل. برنامج “رقم” يحتفظ ببيانات العملاء والمبيعات والحسابات عبر الإنترنت، مما يتيح لك الوصول إليها في أي وقت ومن أي مكان طالما لديك اتصال بالإنترنت.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     	<!-- START SECTION SERVICES -->
 	<section class="section-services">
@@ -224,7 +224,7 @@
 				<div class="col-md-10 col-lg-8">
 					<div class="header-section">
 						<h4 class="main-title mx-auto" data-aos="fade-up" data-aos-delay="200">
-                        خدمات رقم ..
+                        خدمات رقم
                         <span class="line"></span>
                         </h4>
 						<h3 class="sec-title mx-auto">نظام حسابات وفوترة إلكترونية متقدم لتلبية احتياجات أصحاب الأعمال والمحاسبين</h3>
@@ -328,7 +328,7 @@
 	<!-- / END SECTION SERVICES -->
 
     <!-- Start text Section -->
-    <div class="text-sec" data-background="./assets/imgs/word-image-62.webp">
+    <div class="text-sec" data-background="./assets/imgs/fullCover2.jfif">
         <div class="container">
 
             <h2 class="brand-text fs19">إيا كان نشاطك أو قطاع أعمالك</h2>
@@ -342,14 +342,15 @@
         <!-- Start Advantages Section -->
     <section class="about-h-sec main-pt">
         <div class="container">
+            <div class="text-center">
+                <h4 class="main-title mx-auto" data-aos="fade-up" data-aos-delay="200">
+                  مميزات رقم
+                  <span class="line"></span>
+                </h4>
+                <h3 class="sec-title mx-auto">مميزات ووظائف رقمية مميزة .. نشاطك رقم</h3>
+            </div>
 
-            <h4 class="main-title mx-auto" data-aos="fade-up" data-aos-delay="200">
-              مميزات رقم ..
-              <span class="line"></span>
-            </h4>
-            <h3 class="sec-title mx-auto">مميزات ووظائف رقمية مميزة .. نشاطك رقم</h3>
-
-            <div class="row mt-5 gy-4">
+            <div class="row mt-2 gy-4">
 
                 <div class="col-lg-5">
                     <div class="about-imgs">
@@ -465,42 +466,86 @@
     </section>
     <!-- End Advantages Section -->
 
-        <!-- Start About Section -->
-    <div class="about-sec sec-padding" id="about">
-        <img src="./assets/imgs/Dotted Shape lg.png" alt="" class="bg_sec2">
-        <div class="container">
+            <section class="process-section mt-5">
+    <div class="container">
+        <div class="process-wrapper">
+            <div class="desktop-line wow fadeInDown">
+                <svg width="100%" height="100%" viewBox="0 0 1200 400" preserveAspectRatio="none">
+                    <path d="M 60 120 C 250 120, 250 300, 500 300 S 750 120, 950 120 S 1140 300, 1140 300" stroke="url(#line-gradient)" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="8 8"/>
+                    <defs>
+                        <linearGradient id="line-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color: #2563eb; stop-opacity: 0.5"/>
+                            <stop offset="100%" style="stop-color: #6d28d9; stop-opacity: 0.8"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            
+            <div class="mobile-line"></div>
 
-            <div class="about-container">
-                <img src="./assets/imgs/about.gif" alt="" class="about-img wow fadeInRight">
+            <div class="process-steps">
+                <!-- Step 1 -->
+                <div class="process-step step-1 wow fadeInDown">
+                    <div class="step-number">1</div>
+                    <div class="glass-card">
+                        <h3>حلول ذكية وموثوقة</h3>
+                        <p>بخبرة تتجاوز 8 سنوات، لدينا الخبرة والمعرفة المدعومة بتجاربنا السابقة لنكون الأقدر على فهم تحدياتك وتلبية احتياجاتك</p>
+                    </div>
+                </div>
 
-                <div class="about-content wow fadeInLeft">
-                    <img src="./assets/imgs/logo.webp" alt="" class="logo">
-                    <h1 class="about-title">حلول محاسبية متكاملة</h1>
-                    <p class="about-text">
-                        يوجد حلول محاسبية متكاملة في برنامج رقم للمحاسبة والمبيعات السحابي حيث يوفر للشركات الصغيرة والمتوسطة فعالية أكبر في إدارة عملياتها المالية والمحاسبية ، بالإضافة إلى السهولة التكامل مع التقنيات الأخري وتحديثات تلقائية دورية . حيث تتيح مميزات رقم للشركات تحسين كفاءتها واتخاذ القرارات الاستراتيجية بناءً على بيانات دقيقة ومحدثة
-                    </p>
-                    <a href="#" class="main-btn up">شاهد الفيديو</a>
+                <!-- Step 2 -->
+                <div class="process-step step-2 wow fadeInUp">
+                    <div class="step-number">2</div>
+                    <div class="glass-card">
+                        <h3>مرونة لا حدود لها، إنتاجية لا تتوقف</h3>
+                        <p>في المكتب، أو من المنزل، أو في اجتماع مع عملائك. لا يهم! استمتع بمرونة في أي وقت ومن أي مكان.</p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="process-step step-3 wow fadeInDown">
+                    <div class="step-number">3</div>
+                    <div class="glass-card">
+                        <h3>قيمة مقابل السعر</h3>
+                        <p>استمتع بحلول مناسبة تمامًا لميزانيتك دون المساس بالجودة.</p>
+                    </div>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="process-step step-4 wow fadeInUp">
+                    <div class="step-number">4</div>
+                    <div class="glass-card">
+                        <h3>تحديثات مستمرة مجانية</h3>
+                        <p>حرصًا على تلبية طلبات جميع العملاء، تقوم رقم بعمل تحديثات دورية على مدار السنة وتقدمها للمستخدمين بشكل مجاني.</p>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="process-step step-5 wow fadeInDown">
+                    <div class="step-number">5</div>
+                    <div class="glass-card">
+                        <h3>الدعم الفني</h3>
+                        <p>تواصل مع فريق الدعم الفني على مدار 24 ساعة للإجابة على جميع استفساراتك سواء كان من خلال المحادثات الفورية داخل المنصة أو عن طريق الاتصال الهاتفي.</p>
+                    </div>
                 </div>
             </div>
-
         </div>
     </div>
-    <!-- End About Section -->
+</section>
 
-        <section class="why-us container py-5 mt-2">
+        <section class="why-us container py-3 mt-5">
   <div class="row align-items-center">
     <!-- النص -->
     <div class="col-lg-4 text-center text-lg-start mb-5 mb-lg-0">
-      <h2 class="fw-bold fs-4">لماذا</h2>
-      <h1 class="fw-bolder fs16 mt-1">تختار رقم ؟</h1>
-      <!-- <img src="./assets/imgs/logo.webp" alt="" class="logo" style="max-width: 150px;max-height: 130px;"> -->
+      <div class="header-section">
+		<h4 class="main-title" data-aos="fade-up" data-aos-delay="200">
+            لماذا تختار رقم ؟
+        </h4>
+		</div>
       <p class="text-muted my-4 wow fadeInRight">
         مع مرور السنين ، ظهرت حلول أفضل! لقد دخلنا في العديد من<br />
         الشركات مع العلامات التجارية وقدمنا خبراتنا لأكثر من 5 سنوات.
       </p>
-      <!-- <a href="#" class="btn btn-outline-dark rounded-pill px-4 py-2">
-        ← دعنا نعمل معا
-      </a> -->
       <a href="index.html" class="main-btn up fs15 wow fadeInUp" style="z-index: 3;">دعنا نعمل معا ←</a>
     </div>
 
@@ -541,6 +586,108 @@
         <div class="container">
 
             <div class="about-container">
+                <img src="./assets/imgs/about.gif" alt="" class="about-img wow fadeInRight">
+
+                <div class="about-content wow fadeInLeft">
+                    <img src="./assets/imgs/logo.webp" alt="" class="logo">
+                    <h1 class="about-title">حلول محاسبية متكاملة</h1>
+                    <p class="about-text">
+                        يوجد حلول محاسبية متكاملة في برنامج رقم للمحاسبة والمبيعات السحابي حيث يوفر للشركات الصغيرة والمتوسطة فعالية أكبر في إدارة عملياتها المالية والمحاسبية ، بالإضافة إلى السهولة التكامل مع التقنيات الأخري وتحديثات تلقائية دورية . حيث تتيح مميزات رقم للشركات تحسين كفاءتها واتخاذ القرارات الاستراتيجية بناءً على بيانات دقيقة ومحدثة
+                    </p>
+                    <a href="#" class="main-btn up">شاهد الفيديو</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- End About Section -->
+
+    <!----------------->
+<section class="section-tabs mt-4 pt-5">
+		<div class="container">
+			<div class="row justify-content-center text-center">
+				<div class="col-md-10 col-lg-8">
+					<div class="header-section">
+						<h4 class="main-title mx-auto" data-aos="fade-up" data-aos-delay="200">
+                        لماذا يُعَدُّ رقم
+شريكًا مثاليًا لأعمالك؟
+                        <span class="line"></span>
+                        </h4>
+						<h3 class="sec-title mx-auto">اكتشف كيف يساعدك نظام رقم في إدارة أعمالك بكفاءة وفعالية</h3>
+					</div>
+				</div>
+			</div>
+
+            <div class="pure_tabs">
+  
+  <input type="radio" id="tab1" name="tab-control" checked>
+  <input type="radio" id="tab2" name="tab-control">
+  <input type="radio" id="tab3" name="tab-control">  
+  <input type="radio" id="tab4" name="tab-control">
+  <!-- <input type="radio" id="tab5" name="tab-control"> -->
+  <input type="radio" id="tab6" name="tab-control">
+  <ul>
+    <li title="Features"><label for="tab1" role="button">
+<img loading="lazy" src="./assets/imgs/icons/p_icon1.svg" alt="" class="svg">
+<br><span>دعم فني
+متوفر مجانًا</span></label></li>
+    <li title="Delivery Contents"><label for="tab2" role="button">
+<img loading="lazy" src="./assets/imgs/icons/p_icon2.svg" alt="" class="svg">
+<br><span>الأمان
+والحماية</span></label></li>
+    <li title="Shipping"><label for="tab3" role="button">
+<img loading="lazy" src="./assets/imgs/icons/p_icon3.svg" alt="" class="svg">
+<br><span>تجربة مخصصة
+بالكامل</span></label></li>  
+  <li title="Returns"><label for="tab4" role="button">
+<img loading="lazy" src="./assets/imgs/icons/p_icon4.svg" alt="" class="svg">
+<br><span>واجهة سهلة
+الاستخدام</span></label></li>
+  <!-- <li title="Time"><label for="tab5" role="button"><svg viewBox="0 0 24 24">
+    <path d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+</svg><br><span>توفير الوقت
+والجهد</span></label></li> -->
+  <li title="Place"><label for="tab6" role="button">
+<img loading="lazy" src="./assets/imgs/icons/p_icon6.svg" alt="" class="svg">
+<br><span>من أي مكان
+وفي أي وقت</span></label></li>
+  </ul>
+  
+  <div class="slider"><div class="indicator"></div></div>
+  <div class="content">
+    <section>
+      <h2>دعم فني
+متوفر مجانًا</h2>احصل على دعم فني مجاني من فريق مكرَّس للرد على استفساراتكم ومساعدتكم في حال واجهتم أي مشكلات؛ عبر التواصل من خلال الهاتف أو البريد الإلكتروني على مدار اليوم، وذلك لضمان حصولكم على تجربة مثالية عند استخدام نظام رقم.</section>
+        <section>
+          <h2>الأمان
+والحماية</h2>
+          يولي نظام رقم اهتمامًا بالغًا بسلامة بياناتكم على خوادمنا، لذا نستخدم خوادم مؤمنة بالكامل ومشفرة بتقنية SSL 256 bit مع عدة طبقات من الحماية، إلى جانب وجود الخوادم في قارتين مختلفتين مع إجراءات سلامة إضافية لمواقعها وقيود قوية على صلاحية الوصول إلى البيانات، بالإضافة إلى عمليات نسخ احتياطي دورية.</section>
+        <section>
+          <h2>تجربة مخصصة
+بالكامل</h2>
+          خصِّص النظام بما يتوافق مع مجال عملك من خلال تفعيل التطبيقات المطلوبة فقط، وخصِّص واجهة الاستخدام لتلائم هوية علامتك التجارية وألوانها، إلى جانب التعديل في قوالب الفواتير وعروض الأسعار وغيرها من المطبوعات للحصول على تجربة مثالية مخصصة لاحتياجاتك.</section>
+    <section>
+          <h2>واجهة سهلة
+الاستخدام</h2>
+          أدِر أعمالك بسهولة مع العديد من الخصائص والأدوات المضمّنة في واجهة سهلة الاستخدام بخطوات بسيطة، إذ لا تحتاج إلى امتلاك معرفة عميقة بأنظمة تخطيط الموارد المؤسسية أو طرق المحاسبة المعقدة من أجل العمل على أي من تطبيقات النظام.</section>
+    <!-- <section>
+          <h2>توفير الوقت
+والجهد</h2>ابع مؤشرات أعمالك بدقة وأدِر عملياتك بفعالية في خطوات بسيطة من دون استغراق الكثير من الوقت أو بذل مجهود كبير في تنفيذها، وذلك بفضل واجهة المستخدم البسيطة والعمليات المؤتمتة التي يتميز بها نظام رقم.</section> -->
+    <section>
+          <h2>من أي مكان
+وفي أي وقت</h2>لكونه نظامًا سحابيًا على خوادم مؤمنة بالكامل، فستجد رقم في متناول يديك دائماً لمساعدتك في إدارة أعمالك بفعالية على مدار الساعة وطوال أيام الأسبوع، مع إمكانية إصدار الفواتير عبر تطبيق سطح المكتب في حال انقطاع الاتصال بالإنترنت. قم بمتابعة أعمالك وأدِرها من أي مكان وفي أي وقت عبر أي جهاز متاح لديك.</section>
+  </div>
+</div>
+        </div>
+    </section>
+<!----------------->
+
+        <!-- Start About Section -->
+    <div class="about-sec" id="about">
+        <img src="./assets/imgs/Dotted Shape lg.png" alt="" class="bg_sec2">
+        <div class="container">
+
+            <div class="about-container">
                 <div class="about-content wow fadeInRight">
                     <img src="./assets/imgs/logo.webp" alt="" class="logo">
                     <h1 class="about-title">نظام محاسبة وفوترة إلكترونية متطور لأصحاب الأعمال والمحاسبين</h1>
@@ -565,106 +712,65 @@
     </div>
     <!-- End About Section -->
 
-    <div class="iq-features pt-5">
-    <div class="container">
-        <div class="row justify-content-center text-center">
+    <!-- Start Clients Section -->
+    <section class="clients-sec sec-padding">
+        <div class="container">
+             <div class="row justify-content-center text-center mt-4 mb-5">
 				<div class="col-md-10 col-lg-8">
 					<div class="header-section">
 						<h4 class="main-title mx-auto" data-aos="fade-up" data-aos-delay="200">
-                        مجالات رقم ..
+                        مجالات رقم
                         <span class="line"></span>
                         </h4>
 						<h3 class="sec-title mx-auto">برنامج رقم مصمم لكافة مجالات العمل من خلال التطبيقات القابلة للتكامل</h3>
 					</div>
 				</div>
 			</div>
-        <div class="row align-items-center wow fadeInUp">
-            <div class="col-lg-3 col-md-12"></div>
-            <div class="col-lg-6 col-md-12">
-                <div class="holderCircle">
-                    <div class="round"></div>
-                    <div class="dotCircle">
-                        <span class="itemDot active itemDot1" data-tab="1">
-                            <i class="fontawesome-icon fa-boxes fas circle-yes"></i>
-                            <span class="forActive"></span>
-                        </span>
-                        <span class="itemDot itemDot2" data-tab="2">
-                            <i class="fontawesome-icon fa-warehouse fas circle-yes"></i>
-                            <span class="forActive"></span>
-                        </span>
-                        <span class="itemDot itemDot3" data-tab="3">
-                            <i class="fontawesome-icon fa-bars fas circle-yes"></i>
-                            <span class="forActive"></span>
-                        </span>
-                        <span class="itemDot itemDot4" data-tab="4">
-                            <i class="fontawesome-icon fa-car-crash fas circle-yes"></i>
-                            <span class="forActive"></span>
-                        </span>
-                        <span class="itemDot itemDot5" data-tab="5">
-                            <i class="fontawesome-icon fa-dolly-flatbed fas circle-yes"></i>
-                            <span class="forActive"></span>
-                        </span>
-                        <span class="itemDot itemDot6" data-tab="6">
-                            <i class="fontawesome-icon fa-wrench fas circle-yes"></i>
-                            <span class="forActive"></span>
-                        </span>
-                        <span class="itemDot itemDot7" data-tab="7">
-                            <i class="fontawesome-icon fa-city fas circle-yes"></i>
-                            <span class="forActive"></span>
-                        </span>
-                        <span class="itemDot itemDot8" data-tab="8">
-                            <i class="fontawesome-icon fa-people-arrows fas circle-yes"></i>
-                            <span class="forActive"></span>
-                        </span>
-                    </div>
-                    <div class="contentCircle">
-                        <div class="CirItem title-box active CirItem1">
-                            <h2 class="title"><span>قطاع التجزئه</span></h2>
-                            <!-- <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p> -->
-                            <i class="fontawesome-icon fa-boxes fas circle-yes"></i>
-                        </div>
-                        <div class="CirItem title-box CirItem2">
-                            <h2 class="title"><span>قطاع المقاولات</span></h2>
-                            <!-- <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p> -->
-                            <i class="fontawesome-icon fa-warehouse fas circle-yes"></i>
-                        </div>
-                        <div class="CirItem title-box CirItem3">
-                            <h2 class="title"><span>الخدمات العامة</span></h2>
-                            <!-- <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p> -->
-                            <i class="fontawesome-icon fa-bars fas circle-yes"></i>
-                        </div>
-                        <div class="CirItem title-box CirItem4">
-                            <h2 class="title"><span>صيانة السيارات</span></h2>
-                            <!-- <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p> -->
-                            <i class="fontawesome-icon fa-car-crash fas circle-yes"></i>
-                        </div>
-                        <div class="CirItem title-box CirItem5">
-                            <h2 class="title"><span>الخدمات اللوجيستية</span></h2>
-                            <!-- <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p> -->
-                            <i class="fontawesome-icon fa-dolly-flatbed fas circle-yes"></i>
-                        </div>
-                        <div class="CirItem title-box CirItem6">
-                            <h2 class="title"><span>الخدمات المهنية</span></h2>
-                            <!-- <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p> -->
-                            <i class="fontawesome-icon fa-wrench fas circle-yes"></i>
-                        </div>
-                        <div class="CirItem title-box CirItem7">
-                            <h2 class="title"><span>خدمات الإيجار</span></h2>
-                            <!-- <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p> -->
-                            <i class="fontawesome-icon fa-city fas circle-yes"></i>
-                        </div>
-                        <div class="CirItem title-box CirItem8">
-                            <h2 class="title"><span>الجمعيات الخيرية</span></h2>
-                            <!-- <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p> -->
-                            <i class="fontawesome-icon fa-people-arrows fas circle-yes"></i>
-                        </div>
-                    </div>
+
+            <div class="fields-slider owl-carousel">
+
+                <div class="field-item">
+                    <i class="fontawesome-icon fa-boxes fas circle-yes"></i>
+                    <h2 class="title"><span>قطاع التجزئه</span></h2>
+                </div>
+
+                <div class="field-item">
+                    <i class="fontawesome-icon fa-warehouse fas circle-yes"></i>
+                    <h2 class="title"><span>قطاع المقاولات</span></h2>
+                </div>
+
+                <div class="field-item">
+                    <i class="fontawesome-icon fa-bars fas circle-yes"></i>
+                    <h2 class="title"><span>الخدمات العامة</span></h2>
+                </div>
+
+                <div class="field-item">
+                    <i class="fontawesome-icon fa-car-crash fas circle-yes"></i>
+                    <h2 class="title"><span>صيانة السيارات</span></h2>
+                </div>
+
+                <div class="field-item">
+                    <i class="fontawesome-icon fa-dolly-flatbed fas circle-yes"></i>
+                    <h2 class="title"><span>الخدمات اللوجيستية</span></h2>
+                </div>
+
+                <div class="field-item">
+                    <i class="fontawesome-icon fa-wrench fas circle-yes"></i>
+                    <h2 class="title"><span>الخدمات المهنية</span></h2>
+                </div>
+
+                <div class="field-item">
+                    <i class="fontawesome-icon fa-city fas circle-yes"></i>
+                    <h2 class="title"><span>خدمات الإيجار</span></h2>
+                </div>
+                <div class="field-item">
+                    <i class="fontawesome-icon fa-people-arrows fas circle-yes"></i>
+                    <h2 class="title"><span>الجمعيات الخيرية</span></h2>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-12"></div>
         </div>
-    </div>
-</div>
+    </section>
+    <!-- End Clients Section -->
 
     <!-- Start About Section -->
     <section class="about-sec pt-4 pb-4 mt-4 position-relative">
@@ -678,7 +784,7 @@
                         alt="" class="img">
                 </div>
                 <div class="content">
-                    <h5 class="c-dark fw-semibold fs17 wow fadeInUp mb-4">
+                    <h5 class="main-title fs17 wow fadeInUp mb-4">
                         الفاتورة الإلكترونية
                     </h5>
                     <p class="text fs15 wow fadeInLeft mb-1">
@@ -794,130 +900,11 @@
     </section>
     <!-- End Clients Section -->
 
-        <section class="process-section mt-5">
-    <div class="container">
-        <div class="process-wrapper">
-            <div class="desktop-line wow fadeInDown">
-                <svg width="100%" height="100%" viewBox="0 0 1200 400" preserveAspectRatio="none">
-                    <path d="M 60 120 C 250 120, 250 300, 500 300 S 750 120, 950 120 S 1140 300, 1140 300" stroke="url(#line-gradient)" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="8 8"/>
-                    <defs>
-                        <linearGradient id="line-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                            <stop offset="0%" style="stop-color: #2563eb; stop-opacity: 0.5"/>
-                            <stop offset="100%" style="stop-color: #6d28d9; stop-opacity: 0.8"/>
-                        </linearGradient>
-                    </defs>
-                </svg>
-            </div>
-            
-            <div class="mobile-line"></div>
-
-            <div class="process-steps">
-                <!-- Step 1 -->
-                <div class="process-step step-1 wow fadeInDown">
-                    <div class="step-number">1</div>
-                    <div class="glass-card">
-                        <h3>حلول ذكية وموثوقة</h3>
-                        <p>بخبرة تتجاوز 8 سنوات، لدينا الخبرة والمعرفة المدعومة بتجاربنا السابقة لنكون الأقدر على فهم تحدياتك وتلبية احتياجاتك</p>
-                    </div>
-                </div>
-
-                <!-- Step 2 -->
-                <div class="process-step step-2 wow fadeInUp">
-                    <div class="step-number">2</div>
-                    <div class="glass-card">
-                        <h3>مرونة لا حدود لها، إنتاجية لا تتوقف</h3>
-                        <p>في المكتب، أو من المنزل، أو في اجتماع مع عملائك. لا يهم! استمتع بمرونة في أي وقت ومن أي مكان.</p>
-                    </div>
-                </div>
-
-                <!-- Step 3 -->
-                <div class="process-step step-3 wow fadeInDown">
-                    <div class="step-number">3</div>
-                    <div class="glass-card">
-                        <h3>قيمة مقابل السعر</h3>
-                        <p>استمتع بحلول مناسبة تمامًا لميزانيتك دون المساس بالجودة.</p>
-                    </div>
-                </div>
-                
-                <!-- Step 4 -->
-                <div class="process-step step-4 wow fadeInUp">
-                    <div class="step-number">4</div>
-                    <div class="glass-card">
-                        <h3>تحديثات مستمرة مجانية</h3>
-                        <p>حرصًا على تلبية طلبات جميع العملاء، تقوم رقم بعمل تحديثات دورية على مدار السنة وتقدمها للمستخدمين بشكل مجاني.</p>
-                    </div>
-                </div>
-
-                <!-- Step 5 -->
-                <div class="process-step step-5 wow fadeInDown">
-                    <div class="step-number">5</div>
-                    <div class="glass-card">
-                        <h3>الدعم الفني</h3>
-                        <p>تواصل مع فريق الدعم الفني على مدار 24 ساعة للإجابة على جميع استفساراتك سواء كان من خلال المحادثات الفورية داخل المنصة أو عن طريق الاتصال الهاتفي.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-    <!-- Start Customers Reviews Section -->
-    <!-- <section class="customers_sec position-relative main-padding">
-        <img loading="lazy" src="./assets/imgs/lawyer_bg.png" alt="" class="bg_small">
-        <div class="container">
-            <h4 class="main-title mb-3 mx-auto wow fadeInDown">
-                أراء العملاء
-                <span class="line"></span>
-            </h4>
-            <p class="text text-center mb-5 wow fadeInUp">هذه بعض من أراء عملاءنا</p>
-
-            <div class="row">
-                <div class="col-12 col-xl-8 mx-auto">
-
-                    <div class="customers_con">
-                        <div class="customers-slider owl-carousel">
-                            <div class="customer_review">
-                                <div class="content">
-                                    <p class="text wow fadeInRight">
-                                        اشكر مكتب المستشار الظفيرى للمحاماه علي المصداقيه والتفاني فى العمل . كل الشكر
-                                        والتقدير
-                                    </p>
-                                    <h5 class="name wow fadeInUp">محمد محمود</h5>
-                                </div>
-
-                                <div class="customer-img wow fadeInLeft">
-                                    <img loading="lazy" src="assets/imgs/saudi_arabian_man-512.webp" alt="" class="img">
-                                </div>
-                            </div>
-
-                            
-                            <div class="customer_review">
-                                <div class="content">
-                                    <p class="text">
-                                        مكتب محترم جدا انصح الجميع بالتعامل معه . افضل مكتب محاماه فى السعوديه
-                                    </p>
-                                    <h5 class="name">سميه محمود</h5>
-                                </div>
-
-                                <div class="customer-img wow fadeInLeft">
-                                    <img loading="lazy" src="assets/imgs/saudi_arabian_woman-512.webp" alt=""
-                                        class="img">
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- End Customers Reviews Section -->
-
 <section class="py-5">
   <div class="container">
-    <div class="header-section">
+    <div class="header-section text-center">
 						<h4 class="main-title mx-auto" data-aos="fade-up" data-aos-delay="200">
-                        بعض الحقائق عن رقم ..
+                        بعض الحقائق عن رقم
                         <span class="line"></span>
                         </h4>
 						<h3 class="sec-title mx-auto">نحن هنا لمساعدتك في العثور على أفضل طريقة</h3>
@@ -963,91 +950,38 @@
   </div>
 </section>
 
-<!----------------->
-<section class="section-tabs sec-padding">
-		<div class="container">
-			<div class="row justify-content-center text-center">
-				<div class="col-md-10 col-lg-8">
-					<div class="header-section">
-						<h4 class="main-title mx-auto" data-aos="fade-up" data-aos-delay="200">
-                        لماذا يُعَدُّ رقم
-شريكًا مثاليًا لأعمالك؟
-                        <span class="line"></span>
-                        </h4>
-						<h3 class="sec-title mx-auto">اكتشف كيف يساعدك نظام رقم في إدارة أعمالك بكفاءة وفعالية</h3>
-					</div>
-				</div>
-			</div>
+    <!-- Start About Section -->
+    <section class="about-sec pt-4 pb-4 mt-4 position-relative">
+        <!-- <img loading="lazy" src="./assets/imgs/flag-outdoor-scaled.webp" alt="" class="bg_left"> -->
+        <div class="container">
+            <div class="about-content1">
+                <div class="content">
+                    <h5 class="main-title fs17 wow fadeInUp mb-4">
+                         إرسال عبر الواتس أب
+                    </h5>
+                    <p class="text fs15 wow fadeInRight mb-1">
+                        إرسل فواتيرك الأن عبر الواتس أب بصيغة pdf ، وفر الكثير من الوقت والمال حيث السهولة والسرعة ، الأن يمكنك إرسالها كمرفق مباشرة من البرنامج ، ومن ثم مشاركة رابط تحميل الفاتورة عبر واتس أب يحتوي الرابط على تفاصيل الفاتورة مثل قائمة الأصناف والمبالغ الإجمالية، حتى يتمكن الزبون من الإطلاع على التفاصيل بسهولة.
+                    </p>
+                    <div class="d-flex align-items-center gap-3 mt-4">
+                        <a href="tel:+966509009516" target="_blank" class="main-btn fs17 up wow fadeInUp" style="z-index: 3;">00966509009516 <i class="fa-brands fa-whatsapp icon phone"></i></a>
+                    </div>
+                </div>
 
-            <div class="pure_tabs">
-  
-  <input type="radio" id="tab1" name="tab-control" checked>
-  <input type="radio" id="tab2" name="tab-control">
-  <input type="radio" id="tab3" name="tab-control">  
-  <input type="radio" id="tab4" name="tab-control">
-  <!-- <input type="radio" id="tab5" name="tab-control"> -->
-  <input type="radio" id="tab6" name="tab-control">
-  <ul>
-    <li title="Features"><label for="tab1" role="button">
-<img loading="lazy" src="./assets/imgs/icons/p_icon1.svg" alt="" class="svg">
-<br><span>دعم فني
-متوفر مجانًا</span></label></li>
-    <li title="Delivery Contents"><label for="tab2" role="button">
-<img loading="lazy" src="./assets/imgs/icons/p_icon2.svg" alt="" class="svg">
-<br><span>الأمان
-والحماية</span></label></li>
-    <li title="Shipping"><label for="tab3" role="button">
-<img loading="lazy" src="./assets/imgs/icons/p_icon3.svg" alt="" class="svg">
-<br><span>تجربة مخصصة
-بالكامل</span></label></li>  
-  <li title="Returns"><label for="tab4" role="button">
-<img loading="lazy" src="./assets/imgs/icons/p_icon4.svg" alt="" class="svg">
-<br><span>واجهة سهلة
-الاستخدام</span></label></li>
-  <!-- <li title="Time"><label for="tab5" role="button"><svg viewBox="0 0 24 24">
-    <path d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
-</svg><br><span>توفير الوقت
-والجهد</span></label></li> -->
-  <li title="Place"><label for="tab6" role="button">
-<img loading="lazy" src="./assets/imgs/icons/p_icon6.svg" alt="" class="svg">
-<br><span>من أي مكان
-وفي أي وقت</span></label></li>
-  </ul>
-  
-  <div class="slider"><div class="indicator"></div></div>
-  <div class="content">
-    <section>
-      <h2>دعم فني
-متوفر مجانًا</h2>احصل على دعم فني مجاني من فريق مكرَّس للرد على استفساراتكم ومساعدتكم في حال واجهتم أي مشكلات؛ عبر التواصل من خلال الهاتف أو البريد الإلكتروني على مدار اليوم، وذلك لضمان حصولكم على تجربة مثالية عند استخدام نظام رقم.</section>
-        <section>
-          <h2>الأمان
-والحماية</h2>
-          يولي نظام رقم اهتمامًا بالغًا بسلامة بياناتكم على خوادمنا، لذا نستخدم خوادم مؤمنة بالكامل ومشفرة بتقنية SSL 256 bit مع عدة طبقات من الحماية، إلى جانب وجود الخوادم في قارتين مختلفتين مع إجراءات سلامة إضافية لمواقعها وقيود قوية على صلاحية الوصول إلى البيانات، بالإضافة إلى عمليات نسخ احتياطي دورية.</section>
-        <section>
-          <h2>تجربة مخصصة
-بالكامل</h2>
-          خصِّص النظام بما يتوافق مع مجال عملك من خلال تفعيل التطبيقات المطلوبة فقط، وخصِّص واجهة الاستخدام لتلائم هوية علامتك التجارية وألوانها، إلى جانب التعديل في قوالب الفواتير وعروض الأسعار وغيرها من المطبوعات للحصول على تجربة مثالية مخصصة لاحتياجاتك.</section>
-    <section>
-          <h2>واجهة سهلة
-الاستخدام</h2>
-          أدِر أعمالك بسهولة مع العديد من الخصائص والأدوات المضمّنة في واجهة سهلة الاستخدام بخطوات بسيطة، إذ لا تحتاج إلى امتلاك معرفة عميقة بأنظمة تخطيط الموارد المؤسسية أو طرق المحاسبة المعقدة من أجل العمل على أي من تطبيقات النظام.</section>
-    <!-- <section>
-          <h2>توفير الوقت
-والجهد</h2>ابع مؤشرات أعمالك بدقة وأدِر عملياتك بفعالية في خطوات بسيطة من دون استغراق الكثير من الوقت أو بذل مجهود كبير في تنفيذها، وذلك بفضل واجهة المستخدم البسيطة والعمليات المؤتمتة التي يتميز بها نظام رقم.</section> -->
-    <section>
-          <h2>من أي مكان
-وفي أي وقت</h2>لكونه نظامًا سحابيًا على خوادم مؤمنة بالكامل، فستجد رقم في متناول يديك دائماً لمساعدتك في إدارة أعمالك بفعالية على مدار الساعة وطوال أيام الأسبوع، مع إمكانية إصدار الفواتير عبر تطبيق سطح المكتب في حال انقطاع الاتصال بالإنترنت. قم بمتابعة أعمالك وأدِرها من أي مكان وفي أي وقت عبر أي جهاز متاح لديك.</section>
-  </div>
-</div>
+                <div class="about-img1 wow fadeInLeft">
+                    <img loading="lazy"
+                        src="./assets/imgs/whatsapp.webp"
+                        alt="" class="img">
+                </div>
+
+            </div>
         </div>
     </section>
-<!----------------->
-
+    <!-- End About Section -->
 
     <div class="container py-5">
-            <div class="header-section">
+            <div class="header-section text-center">
 						<h4 class="main-title mx-auto" data-aos="fade-up" data-aos-delay="200">
-                        أراء العملاء ..
+                        أراء العملاء
                         <span class="line"></span>
                         </h4>
 						<h3 class="sec-title mx-auto wow fadeInUp">الاف المستخدمين يثقون فى رقم</h3>
@@ -1392,11 +1326,13 @@
 
             <div class="contact-style py-5">
 
-                <h4 class="main-title mb-3 mx-auto wow fadeInDown">
-                    تواصل مع رقم
-                    <span class="line"></span>
-                </h4>
-                <p class="text text-center mb-5 wow fadeInUp">ارسل رسالة. سنتواصل معك بأقرب وقت ممكن</p>
+                <div class="text-center">
+                    <h4 class="main-title text-center mb-3 mx-auto wow fadeInDown">
+                        تواصل مع رقم
+                        <span class="line"></span>
+                    </h4>
+                    <p class="text text-center mb-5 wow fadeInUp">ارسل رسالة. سنتواصل معك بأقرب وقت ممكن</p>
+                </div>
 
                 <div class="row gy-4">
 
@@ -1487,7 +1423,7 @@
     <footer class="footer">
         <!-- <img loading="lazy" src="./assets/imgs/Object-1.png" alt="about_b" class="bg_left">
         <img src="./assets/imgs/circle.png" class="circle_left" alt="circle"> -->
-        <img src="./assets/imgs/footer_bg.jpeg" alt="" class="footer_bg">
+        <img src="./assets/imgs/fullCover2.jfif" alt="" class="footer_bg">
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-12 col-lg-4 col-md-6 mb-4">
@@ -1614,6 +1550,7 @@
 
 
     <div class="overlay-m"></div>
+    <a class="back-to-top"><i class="fas fa-arrow-up"></i></a>
 
 
 

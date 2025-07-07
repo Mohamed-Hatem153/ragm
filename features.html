@@ -65,74 +65,55 @@
     <!-- End Social Section -->
 
 
-        <!-- Start Navbar -->
-    <nav class="page-navbar">
+    <!-- Start Navbar -->
+    <header>
         <div class="container">
-            <div class="navbar-content">
-
-                <a href="index.html" class="logo">
-                    <img loading="lazy" src="./assets/imgs/logo.webp" alt="" class="logo-img">
-                </a>
-
-                <div class="links">
-                    <a href="index.html" class="logo">
-                        <img loading="lazy" src="./assets/imgs/logo.webp" alt="logo">
-                    </a>
-
-                    <a href="index.html" class="link">الرئيسية</a>
-
-                    <a href="features.html" class="link">المميزات</a>
-
-                    <a href="our-service2.html" class="link">الباقات</a>
-                    <a href="our-services.html" class="link">خدماتنا</a>
-                    <a href="blog.html" class="link">المدونة</a>
-                    <a href="asked-questions.html" class="link">الاسئلة الشائعة</a>
-                    <a href="contact-us.html" class="link">اتصل بنا</a>
-                    <div class="more_nav">
-                        <span class="link">المزيد</span>
-                        <div class="more_dropdown">
-                            <a href="index.html" class="more_l">طلب توظيف</a>
-                            <a href="index.html" class="more_l">طلب تدريب</a>
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="index.html"><img src="./assets/imgs/logo.webp" class="the_logo"></a>
+                    <ul class="d-flex align-items-center nav_bar">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="#who-we">من نحن</a></li>
+                        <li><a href="features.html">المميزات</a></li>
+                        <li><a href="our-services2.html">الباقات</a></li>
+                        <li>
+                            <a href="our-services.html">خدماتنا</a>
+                        </li>
+                        <li>
+                            <a href="blog.html">المدونة</a>
+                        </li>
+                        <li>
+                            <a href="asked-questions.html">الاسئلة الشائعة</a>
+                        </li>
+                        <li>
+                            <a href="contact-us.html">اتصل بنا</a>
+                        </li>
+                        <li>
+                            <a>المزيد</a>
+                            <ul class="list_nav">
+                                <li>
+                                    <a href="index.html">طلب توظيف</a>
+                                    <!-- <ul>
+                                        <li><a href="education-systems.html">انظمة اداره التعيم</a></li>
+                                    </ul> -->
+                                </li>
+                                <li><a href="index.html">طلب تدريب</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                
+                <div class="d-flex align-items-center">
+                    <a href="" class="btn_lang">En</a>
+                    <div class="close-open-nav">
+                        <div>
+                            <span></span>
+                            <span></span>
+                            <span></span>
                         </div>
                     </div>
                 </div>
-
-                <div class="nav-icons">
-
-                    <div class="dropdown">
-                        <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fa-solid fa-globe drop-ic"></i>
-                            <span class="lang drop-text">العربية</span>
-                            <i class="fa-solid fa-angle-down drop-ic"></i>
-                        </button>
-
-                        <ul class="dropdown-menu left drop-lang">
-                            <li>
-                                <a href="#" class="lang-item">
-                                    <img loading="lazy" src="./assets/imgs/icons/download.png" class="ic" alt="">
-                                    العربية
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="lang-item">
-                                    <img loading="lazy" src="./assets/imgs/icons/download_en.png" class="ic" alt="">
-                                    English
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <a href="index.html" class="main-btn up">تجربة مجانية</a>
-
-                    <div class="nav-ic side-open">
-                        <i class="fa-solid fa-bars ic"></i>
-                    </div>
-
-                </div>
-
-
             </div>
         </div>
-    </nav>
+    </header>
     <!-- End Navbar -->
 
 
@@ -158,17 +139,18 @@
     </section>
     <!-- End page-top -->
 
-        <!-- Start Advantages Section -->
+       <!-- Start Advantages Section -->
     <section class="about-h-sec main-pt">
         <div class="container">
+            <div class="text-center">
+                <h4 class="main-title mx-auto" data-aos="fade-up" data-aos-delay="200">
+                  مميزات رقم
+                  <span class="line"></span>
+                </h4>
+                <h3 class="sec-title mx-auto">مميزات ووظائف رقمية مميزة .. نشاطك رقم</h3>
+            </div>
 
-            <h4 class="main-title mx-auto" data-aos="fade-up" data-aos-delay="200">
-              مميزات رقم ..
-              <span class="line"></span>
-            </h4>
-            <h3 class="sec-title mx-auto">مميزات ووظائف رقمية مميزة .. نشاطك رقم</h3>
-
-            <div class="row mt-5 gy-4">
+            <div class="row mt-2 gy-4">
 
                 <div class="col-lg-5">
                     <div class="about-imgs">
@@ -186,10 +168,7 @@
                         <p class="about-text">
                             إستمتع بتجربة رقمية مميزة مع برنامج رقم إمكانيات عديدة ووظائف تخدم أعمالك
                         </p>
-                        <!-- <p class="about-text">
-                        إصدر قيودك المحاسبية وفواتيرك الإلكترونية مع رقم
-                        </p> -->
-                        <a href="index.html" class="main-btn fs15 up mt-4 mx-lg-0 mx-auto">أبدأ تجربة مجانية الأن</a>
+                        <a href="index.html" class="main-btn up fs16 mt-4 mx-lg-0 mx-auto">أبدأ تجربة مجانية الأن</a>
 
                         <!-- About Slider -->
                         <div class="about-slider owl-carousel mt-5">
@@ -288,7 +267,7 @@
     <!-- End Advantages Section -->
 
     <!-- Start text Section -->
-    <div class="text-sec mb-5" data-background="./assets/imgs/slider_3.png">
+    <div class="text-sec mb-5" data-background="./assets/imgs/fullCover2.jfif">
         <div class="container">
             <h2 class="brand-text fs19">نشاطك .. هو رقم</h2>
             <h5 class="brand-text fs16 mt-3 mb-4">تواصل الأن مع قسم المبيعات وأعرف أكثر عن البرنامج</h5>
@@ -298,18 +277,20 @@
     <!-- End text Section -->
 
     <!------------------------------->
-            <section class="why-us container py-5 mt-5">
+   <section class="why-us container py-5 mt-5">
   <div class="row align-items-center">
     <!-- النص -->
     <div class="col-lg-4 text-center text-lg-start mb-5 mb-lg-0">
-      <h2 class="fw-bold fs-4">لماذا</h2>
-      <h1 class="fw-bolder fs16 mt-1">تختار رقم ؟</h1>
-      <!-- <img src="./assets/imgs/logo.webp" alt="" class="logo" style="max-width: 150px;max-height: 130px;"> -->
+      <div class="header-section">
+		<h4 class="main-title" data-aos="fade-up" data-aos-delay="200">
+            لماذا تختار رقم ؟
+        </h4>
+		</div>
       <p class="text-muted my-4 wow fadeInRight">
         مع مرور السنين ، ظهرت حلول أفضل! لقد دخلنا في العديد من<br />
         الشركات مع العلامات التجارية وقدمنا خبراتنا لأكثر من 5 سنوات.
       </p>
-      <a href="index.html" class="main-btn up wow fadeInUp" style="z-index: 3;">دعنا نعمل معا ←</a>
+      <a href="index.html" class="main-btn up fs15 wow fadeInUp" style="z-index: 3;">دعنا نعمل معا ←</a>
     </div>
 
     <!-- الكروت المتدرجة -->
@@ -415,11 +396,10 @@
   <div class="responsive-container-block container">
     <div class="responsive-container-block">
       
-      <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-6 wk-ipadp-12 content-one">
-        <p class="text-blk section-header main-title wow fadeInRight">
+      <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-6 wk-ipadp-12 content-one mt-5">
+        <h4 class=" main-title wow fadeInRight">
           رقم برنامج محاسبة ومبيعات
-        </p>
-        <span class="line"></span>
+        </h4>
         <p class="text-blk section-header fs17 mb-5 wow fadeInRight">
           مزايا برنامج محاسبة ومبيعات
         </p>
@@ -531,7 +511,7 @@
     <footer class="footer">
         <!-- <img loading="lazy" src="./assets/imgs/Object-1.png" alt="about_b" class="bg_left">
         <img src="./assets/imgs/circle.png" class="circle_left" alt="circle"> -->
-        <img src="./assets/imgs/footer_bg.jpeg" alt="" class="footer_bg">
+        <img src="./assets/imgs/fullCover2.jfif" alt="" class="footer_bg">
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-12 col-lg-4 col-md-6 mb-4">
