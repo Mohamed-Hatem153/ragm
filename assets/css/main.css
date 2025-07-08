@@ -3551,7 +3551,7 @@ header.fixed .the_logo {
   border-radius: 50%;
   font-weight: bold;
   color: #155ef5;
-  font-family: fontMed !important;
+  font-family: fontMed, cursive;
 }
 
 .close-open-nav {
@@ -4225,6 +4225,17 @@ input[type=radio]:checked::after {
   position: relative;
 }
 
+.owl_index .item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(54, 71, 128, 0.5);
+  z-index: -1;
+}
+
 .owl_index .item img {
   width: 100%;
   height: 100%;
@@ -4235,6 +4246,7 @@ input[type=radio]:checked::after {
   left: 0;
   bottom: 0;
   right: 0;
+  z-index: -2;
 }
 
 .owl_index .cover {
@@ -4774,6 +4786,436 @@ html[lang=ar] .about-card .text {
 }
 
 /***************** End About Section ***************/
+/******************* start about page ***********************/
+.about-us-page .text-blk {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  line-height: 25px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+.about-us-page .responsive-cell-block {
+  min-height: 75px;
+}
+.about-us-page .responsive-container-block {
+  min-height: 75px;
+  width: 100%;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  justify-content: flex-start;
+}
+.about-us-page .responsive-container-block.bigContainer {
+  padding-top: 0px;
+  padding-right: 50px;
+  padding-bottom: 0px;
+  padding-left: 50px;
+  margin-top: 50px;
+  margin-right: 0px;
+  margin-bottom: 50px;
+  margin-left: 0px;
+}
+.about-us-page .responsive-container-block.Container {
+  max-width: 1320px;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+}
+.about-us-page .mainImg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about-us-page .blueDots {
+  position: absolute;
+  top: 360px;
+  right: -46%;
+  z-index: 0;
+  left: auto;
+  width: 80%;
+  height: 500px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.about-us-page .imgContainer {
+  position: relative;
+  width: 48%;
+  height: 100%;
+}
+.about-us-page .responsive-container-block.textSide {
+  width: 48%;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  z-index: 100;
+}
+.about-us-page .text-blk.heading {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 700;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+}
+.about-us-page .text-blk.subHeading {
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+}
+.about-us-page .cardImg {
+  width: 31px;
+  height: 31px;
+}
+.about-us-page .cardImgContainer {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-color: rgb(229, 229, 229);
+  border-right-color: rgb(229, 229, 229);
+  border-bottom-color: rgb(229, 229, 229);
+  border-left-color: rgb(229, 229, 229);
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+html[lang=en] .about-us-page .cardImgContainer {
+  margin-right: 10px;
+}
+html[lang=ar] .about-us-page .cardImgContainer {
+  margin-left: 10px;
+}
+.about-us-page .responsive-cell-block.wk-desk-6.wk-ipadp-6.wk-tab-12.wk-mobile-12 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+}
+.about-us-page .text-blk.cardHeading {
+  font-size: 16px;
+  line-height: 28px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+}
+.about-us-page .text-blk.cardSubHeading {
+  color: rgb(153, 153, 153);
+  line-height: 22px;
+}
+.about-us-page .explore {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  color: white;
+  background-color: rgb(244, 152, 146);
+  box-shadow: rgba(244, 152, 146, 0.25) 0px 10px 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  cursor: pointer;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  border-top-style: initial;
+  border-right-style: initial;
+  border-bottom-style: initial;
+  border-left-style: initial;
+  border-top-color: initial;
+  border-right-color: initial;
+  border-bottom-color: initial;
+  border-left-color: initial;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  padding-top: 17px;
+  padding-right: 40px;
+  padding-bottom: 17px;
+  padding-left: 40px;
+}
+.about-us-page .explore:hover {
+  background-image: initial;
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-repeat-x: initial;
+  background-repeat-y: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: rgb(244, 182, 176);
+}
+.about-us-page #ixvck {
+  margin-top: 60px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+.about-us-page .redDots {
+  position: absolute;
+  top: -350px;
+  left: -100px;
+  height: 500px;
+  width: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  bottom: auto;
+}
+@media (max-width: 1024px) {
+  .about-us-page .responsive-container-block.Container {
+    position: relative;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .about-us-page .mainImg {
+    bottom: 0px;
+  }
+  .about-us-page .imgContainer {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: auto;
+    width: 60%;
+  }
+  .about-us-page .responsive-container-block.textSide {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    width: 70%;
+  }
+  .about-us-page .responsive-container-block.Container {
+    flex-direction: column-reverse;
+  }
+  .about-us-page .imgContainer {
+    position: relative;
+    width: auto;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+  }
+  .about-us-page .responsive-container-block.textSide {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    width: 100%;
+  }
+  .about-us-page .responsive-container-block.Container {
+    flex-direction: row-reverse;
+  }
+  .about-us-page .responsive-container-block.Container {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 768px) {
+  .about-us-page .responsive-container-block.textSide {
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .about-us-page .text-blk.subHeading {
+    text-align: center;
+    font-size: 17px;
+    max-width: 520px;
+  }
+  .about-us-page .text-blk.heading {
+    text-align: center;
+  }
+  .about-us-page .imgContainer {
+    opacity: 0.8;
+  }
+  .about-us-page .imgContainer {
+    height: 500px;
+  }
+  .about-us-page .imgContainer {
+    width: 30px;
+  }
+  .about-us-page .responsive-container-block.Container {
+    flex-direction: column-reverse;
+  }
+  .about-us-page .responsive-container-block.Container {
+    flex-wrap: nowrap;
+  }
+  .about-us-page .responsive-container-block.textSide {
+    width: 100%;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+  }
+  .about-us-page .imgContainer {
+    width: 90%;
+  }
+  .about-us-page .imgContainer {
+    height: 450px;
+    margin-top: 5px;
+    margin-right: 33.9062px;
+    margin-bottom: 0px;
+    margin-left: 33.9062px;
+  }
+  .about-us-page .redDots {
+    display: none;
+  }
+  .about-us-page .explore {
+    font-size: 16px;
+    line-height: 14px;
+  }
+}
+@media (max-width: 500px) {
+  .about-us-page .imgContainer {
+    position: static;
+    height: 450px;
+  }
+  .about-us-page .mainImg {
+    height: 100%;
+  }
+  .about-us-page .blueDots {
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    bottom: auto;
+    right: auto;
+  }
+  .about-us-page .imgContainer {
+    width: 100%;
+  }
+  .about-us-page .responsive-container-block.textSide {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+  .about-us-page .responsive-container-block.Container {
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    overflow-x: visible;
+    overflow-y: visible;
+  }
+  .about-us-page .responsive-container-block.bigContainer {
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding: 0 30px 0 30px;
+  }
+  .about-us-page .redDots {
+    display: none;
+  }
+  .about-us-page .text-blk.subHeading {
+    font-size: 16px;
+    line-height: 23px;
+  }
+  .about-us-page .text-blk.heading {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  .about-us-page .responsive-container-block.textSide {
+    margin-top: 40px;
+    margin-right: 0px;
+    margin-bottom: 50px;
+    margin-left: 0px;
+  }
+  .about-us-page .imgContainer {
+    margin-top: 5px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    width: 100%;
+    position: relative;
+  }
+  .about-us-page .explore {
+    padding-top: 17px;
+    padding-right: 0px;
+    padding-bottom: 17px;
+    padding-left: 0px;
+    width: 100%;
+  }
+  .about-us-page #ixvck {
+    width: 90%;
+    margin-top: 40px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    font-size: 15px;
+  }
+  .about-us-page .blueDots {
+    bottom: 0px;
+    width: 100%;
+    height: 80%;
+    top: 10%;
+  }
+  .about-us-page .text-blk.cardHeading {
+    font-size: 16px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 8px;
+    margin-left: 0px;
+    line-height: 25px;
+  }
+  .about-us-page .responsive-cell-block.wk-desk-6.wk-ipadp-6.wk-tab-12.wk-mobile-12 {
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+  }
+}
+
+/******************* end about page ***********************/
 /***************** start why us Section ***************/
 .step-cards {
   display: flex;
@@ -4935,14 +5377,6 @@ html[lang=ar] .about-card .text {
     top: -1.25rem;
   }
 }
-.step-3 .step-number, .step-4 .step-number {
-  background-color: rgba(124, 58, 237, 0.5);
-  border-color: rgba(192, 132, 252, 0.5);
-}
-.step-5 .step-number {
-  background-color: rgba(219, 39, 119, 0.5);
-  border-color: rgba(244, 114, 182, 0.5);
-}
 
 .glass-card {
   padding: 1.5rem;
@@ -4968,15 +5402,7 @@ html[lang=ar] .about-card .text {
   font-size: 1rem;
   margin-bottom: 0.5rem;
   line-height: 2rem;
-}
-.step-1 .glass-card h3, .step-2 .glass-card h3 {
   color: #93c5fd;
-}
-.step-3 .glass-card h3, .step-4 .glass-card h3 {
-  color: #d8b4fe;
-}
-.step-5 .glass-card h3 {
-  color: #f9a8d4;
 }
 .glass-card p {
   color: #cbd5e1;
@@ -5017,6 +5443,11 @@ html[lang=ar] .about-card .text {
   width: 100%;
   height: 100%;
   display: block;
+}
+@media screen and (max-width: 768px) {
+  .facts-image {
+    margin-bottom: 20px;
+  }
 }
 
 .testimonial-container {
@@ -5662,6 +6093,11 @@ html[lang=ar] .about-sec .bg_sec2 {
   color: #fff;
   font-size: 45px;
   cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .video_sec {
+    display: none;
+  }
 }
 
 /********************* End video_sec section *********************/
@@ -7618,8 +8054,6 @@ a, a:hover {
 
 .responsive-container-block {
   min-height: 75px;
-  height: -moz-fit-content;
-  height: fit-content;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -7664,7 +8098,7 @@ a, a:hover {
   margin-left: 0px;
   font-size: 16px;
   line-height: 27px;
-  font-family: fontReg;
+  font-family: fontMed, cursive;
 }
 
 .text-blk.section-header {
@@ -8348,52 +8782,46 @@ html[lang=ar] .main-input.search .main-icon {
 
 /***************** End package_card *********************/
 /***************** Start  *********************/
-.invoices {
-  overflow-x: auto;
+table {
+  table-layout: fixed;
+  word-wrap: break-word;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: fontMed, cursive;
 }
-.invoices::-webkit-scrollbar {
-  height: 4px;
+table .active {
+  color: #155ef5;
+  background-color: #f2f2f2;
 }
-.invoices::-webkit-scrollbar-track {
-  background: transparent;
+table td.price-table-popular {
+  border-top: 3px solid #155ef5;
+  color: #155ef5;
+  font-size: 14px;
+  font-weight: 700;
 }
-.invoices::-webkit-scrollbar-thumb {
-  border-radius: 25px;
+table .price-blank {
+  background-color: #fafafa;
 }
-
-.invoices-table {
-  width: 100%;
-  white-space: nowrap;
+table .text-sm {
+  font-size: 12px;
 }
-.invoices-table thead th {
-  padding: 15px 10px;
-  text-align: center;
-  font-size: 16px;
-  color: #333;
-  font-weight: 600;
-  background-color: rgba(21, 94, 245, 0.1);
+table .price {
+  font-size: 2em;
+  color: #155ef5;
 }
 @media screen and (max-width: 425px) {
-  .invoices-table thead th {
-    font-size: 14px;
-    padding: 15px 12px;
+  table .price {
+    font-size: 1.5em;
   }
 }
-.invoices-table tbody tr td {
-  font-size: 15px;
-  color: #333;
-  padding: 20px 10px;
-  text-align: center;
-  vertical-align: middle;
+table h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
 }
 @media screen and (max-width: 425px) {
-  .invoices-table tbody tr td {
+  table h2 {
     font-size: 13px;
-    padding: 15px 12px;
   }
-}
-.invoices-table tbody tr:nth-child(even) {
-  background-color: rgba(243, 243, 243, 0.3);
 }
 
 /***************** End  *********************/

@@ -113,8 +113,6 @@ $(document).ready(function () {
         }
     });
 
-
-
     $(".back-to-top").on("click", function () {
         $("html, body").animate({
             scrollTop: 0
@@ -141,6 +139,10 @@ $(document).ready(function () {
         nav: false,
         mouseDrag: false,
         autoplay: true,
+        autoplayTimeout: 5000,
+        autoplaySpeed: 1500,
+        smartSpeed: 1500,
+
         responsive: {
             0: {
                 items: 1
