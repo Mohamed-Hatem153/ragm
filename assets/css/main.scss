@@ -174,6 +174,49 @@ a:not([href]):not([tabindex]){
      color: #fff;
  }
 
+ /*Extra small devices (portrait phones, less than 576px)*/
+ @media (max-width: 575.98px) {
+     .owl_index .header-content {
+         padding: 24px 40px;
+     }
+
+     .owl_index .header-content h2 {
+         font-weight: 300;
+         font-size: 22px;
+         color: #fff;
+     }
+
+     .owl_index .header-content h1 {
+         font-size: 35px;
+         margin: 0px 0 15px;
+     }
+
+     .owl_index .header-content h4 {
+         font-size: 14px;
+         line-height: 23px;
+     }
+
+
+     .foot_wol button {
+         transform: translate(-50%, -160%) !important;
+     }
+
+     .items_statistics > div{
+         width: 150px;
+         height: 150px;
+         font-size: 25px
+     }
+     
+     .items_statistics > div > aside > i {
+    font-size: 30px;
+}
+     
+     .items_statistics > div > aside > span{
+         font-size: 14px
+     }
+     
+ }
+
  .owl_index .owl-item.active h1 {
      -webkit-animation-duration: 1s;
      animation-duration: 1s;
@@ -700,7 +743,7 @@ a:not([href]):not([tabindex]){
     align-items: flex-start;
     justify-content: center;
     padding: 2rem 1rem;
-    height: 80vh;
+    min-height: 100vh;
     
     // @media (min-width: 640px) {
     //     padding: 3rem 1.5rem;
@@ -2367,6 +2410,7 @@ a:not([href]):not([tabindex]){
   align-items: center;
   justify-content: center;
   gap: 10px;
+  text-align: center;
 
   &::after,
   &::before {
@@ -2391,8 +2435,9 @@ a:not([href]):not([tabindex]){
   max-height: 95px !important;
 }
 .title{
-  font-size: 16px;
+  font-size: 14px;
   color: $black;
+  word-wrap: break-word;
 }
 i{
   font-size: 30px;
