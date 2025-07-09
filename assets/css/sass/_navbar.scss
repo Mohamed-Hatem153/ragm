@@ -386,6 +386,9 @@
  .nav_bar li {
      position: relative
  }
+ .nav_bar .logo_list {
+     display: none;
+ }
 
  .nav_bar > li > a {
      height: 90px;
@@ -393,6 +396,43 @@
      align-items: center;
      color: $main;
      padding: 0 5px
+ }
+ .nav_bar{
+    li{
+        .link{
+        &::after {
+          position: absolute;
+          content: '';
+          bottom: 15px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 30px;
+          height: 2px;
+          background-color: $main;
+          transition: $main-transition;
+          opacity: 0;
+          @include border-radius(5px);
+        }
+
+        &:hover,
+        &.active {
+          color: $main !important;
+
+          &::after {
+            opacity: 1;
+          }
+
+          @media screen and (max-width:$screen-lg) {
+            color: $white !important;
+            
+            &::after {
+              width: 100%;
+              z-index: -1;
+            }
+          }
+        }
+        }
+    }
  }
 
 
@@ -497,7 +537,7 @@
          height: 100%;
          background: #ffffff;
          box-shadow: -2px 0 5px 0 rgb(0 0 0 / 30%);
-         z-index: 100;
+         z-index: 200;
          transform: translateX(100%);
          transition: all 0.5s ease-in-out 0s;
          padding: 15px;
@@ -508,10 +548,10 @@
          transform: translateX(0px)
      }
 
-     .nav_bar > li > a {
-         height: auto !important;
-         margin: 10px 0;
-     }
+    //  .nav_bar > li > a {
+    //      height: auto !important;
+    //      margin: 10px 0;
+    //  }
 
      .nav_bar > li ul {
          position: static;
@@ -527,3 +567,51 @@
          transform: none
      }
  }
+
+//  @media (max-width: 767.98px) {
+//      .nav_bar > li > a {
+//          height: auto !important;
+//          margin: 10px 0;
+//      }
+//  }
+ @media screen and (max-width:$screen-lg) {
+    // .nav_bar > li{
+    //     width: 100%;
+    //     text-align: center;
+    // }
+    .nav_bar > li > a{
+        width: 100%;
+        //   color: $black;
+        flex-shrink: 0;
+          height: 45px !important;
+          margin-bottom: 15px;
+          font-size: 16px;
+          text-align: center;
+        justify-content: center;
+
+          &::after {
+            @include dir-left(0px);
+            height: calc(100% + 6px);
+            width: 3px;
+            top: 50%;
+            transform: translateY(-50%) translateX(0);
+            bottom: unset;
+            // opacity: 1;
+          }
+    }
+    .nav_bar > li > .first{
+        margin-top: 20px;
+    }
+
+    .nav_bar .logo_list {
+     display: block;
+     max-width: 140px;
+    //  max-height: 90px;
+    margin: 10px auto 25px;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+ }
+}

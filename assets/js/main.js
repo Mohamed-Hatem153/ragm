@@ -18,7 +18,7 @@ $(".overlay-m").on("click", function () {
 let isRtl = $('html[lang="ar"]').length > 0;
 
 // Active Link
-$(".page-navbar .links .link").each(function () {
+$(".nav_bar li .link").each(function () {
   if (window.location.href.includes($(this).attr("href"))) {
     $(this).addClass("active");
   }
