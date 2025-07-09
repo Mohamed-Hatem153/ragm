@@ -3541,7 +3541,7 @@ header.fixed .the_logo {
     color: #fff !important;
   }
   .nav_bar li .link:hover::after, .nav_bar li .link.active::after {
-    width: 100%;
+    width: 100% !important;
     z-index: -1;
   }
 }
@@ -3667,7 +3667,7 @@ header.fixed .the_logo {
 }
 @media screen and (max-width: 992px) {
   .nav_bar > li > a {
-    width: 100%;
+    width: 100% !important;
     flex-shrink: 0;
     height: 45px !important;
     margin-bottom: 15px;
@@ -3676,17 +3676,17 @@ header.fixed .the_logo {
     justify-content: center;
   }
   .nav_bar > li > a::after {
-    height: calc(100% + 6px);
-    width: 3px;
-    top: 50%;
+    height: calc(100% + 6px) !important;
+    width: 3px !important;
+    top: 0;
     transform: translateY(-50%) translateX(0);
     bottom: unset;
   }
   html[lang=en] .nav_bar > li > a::after {
-    left: 0px;
+    left: -125px;
   }
   html[lang=ar] .nav_bar > li > a::after {
-    right: 0px;
+    right: -125px;
   }
   .nav_bar > li > .first {
     margin-top: 20px;
