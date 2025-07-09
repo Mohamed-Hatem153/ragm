@@ -858,7 +858,7 @@ a:not([href]):not([tabindex]){
 
 .responsive-cell-block.wk-desk-6.wk-ipadp-6.wk-tab-12.wk-mobile-12 {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding-top: 10px;
   padding-right: 15px;
@@ -1071,10 +1071,11 @@ a:not([href]):not([tabindex]){
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .imgContainer {
     position: static;
     height: 450px;
+    display: none;
   }
 
   .mainImg {
