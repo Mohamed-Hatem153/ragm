@@ -843,7 +843,14 @@
      display: inline-flex;
      position: relative;
      padding: 0px 20px;
-     z-index: 2
+     z-index: 2;
+    @media screen and (max-width: $screen-sm) {
+      font-size: 23px;
+    }
+
+    @media screen and (max-width: $screen-xs) {
+      font-size: 20px;
+    }
  }
 
  .main-title:after,
