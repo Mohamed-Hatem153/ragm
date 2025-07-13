@@ -5337,7 +5337,12 @@ html[lang=ar] .about-us-page .cardImgContainer {
   align-items: flex-start;
   justify-content: center;
   padding: 2rem 1rem;
-  min-height: 100vh;
+  padding: 2rem 1rem 14rem 1rem;
+}
+@media screen and (max-width: 992px) {
+  .process-section {
+    padding: 2rem 1rem 2rem 1rem;
+  }
 }
 .process-section .container {
   width: 100%;

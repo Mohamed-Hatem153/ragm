@@ -1243,7 +1243,11 @@ a:not([href]):not([tabindex]){
     align-items: flex-start;
     justify-content: center;
     padding: 2rem 1rem;
-    min-height: 100vh;
+    // min-height: 100vh;
+    padding: 2rem 1rem 14rem 1rem;
+    @media screen and (max-width: $screen-lg) {
+      padding: 2rem 1rem 2rem 1rem;
+    }
     
     // @media (min-width: 640px) {
     //     padding: 3rem 1.5rem;
