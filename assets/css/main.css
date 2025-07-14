@@ -3497,13 +3497,13 @@ header.fixed .nav_bar > li > a {
 }
 
 .the_logo {
-  max-width: 140px;
+  max-width: 180px;
   max-height: 100px;
   margin-inline-end: 15px;
 }
 
 header.fixed .the_logo {
-  max-width: 120px;
+  max-width: 140px;
   max-height: 100px;
 }
 
