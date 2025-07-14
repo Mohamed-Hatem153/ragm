@@ -7437,8 +7437,8 @@ html[lang=ar] .gallary .gallary-item .fancybox-img {
   width: 100%;
   height: 100%;
   z-index: -2;
-  -o-object-fit: fill;
-     object-fit: fill;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .page-top .page-info {
   padding: 180px 0 50px;
