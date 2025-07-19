@@ -7,6 +7,7 @@
   overflow: hidden;
   z-index: 2;
   box-shadow: 0 -1px 10px 0 rgb(0 0 0 / 5%);
+  background-color: $main;
 
 
   .bg_left_footer {
@@ -50,9 +51,28 @@
     }
   }
 
+  .groups{
+    width: 100%;
+    .footer-img{
+      height: 118px;
+      width: 130px;
+      // object-fit: cover;
+      // margin-bottom: 30px;
+
+      @media (max-width: $screen-md) {
+        margin-bottom: 12px;
+      }
+
+      @media (max-width: 550px) {
+        max-height: 50px;
+        margin: 0 auto 12px;
+      }
+    }
+  }
+
   .footer-title {
     font-size: 14px;
-    color: $black !important;
+    color: $white !important;
     line-height: 1.9;
 
     @media (max-width: 550px) {
@@ -73,9 +93,9 @@
       display: block;
       padding: 0 60px 15px;
       font-size: 22px;
-      color: $black;
+      color: $white;
       margin-bottom: 15px;
-      border-bottom: 1px solid $black;
+      border-bottom: 1px solid $white;
 
       @media (max-width: 425px) {
         padding: 0 25px 15px;
@@ -94,7 +114,7 @@
     .foot-title,
     .main-foot-title {
       font-size: 15px;
-      color: $black !important;
+      color: $white !important;
       position: relative;
       font-weight: 500;
 
@@ -126,7 +146,7 @@
         margin-top: 10px;
         height: 3px;
         width: 50px;
-        background: $black;
+        background: $white;
         content: " ";
         position: absolute;
         border-radius: 25px;
@@ -149,7 +169,7 @@
 
       .act-befor {
         font-size: 14px;
-        color: $black !important;
+        color: $white !important;
         display: flex;
         align-items: center;
         position: relative;
@@ -225,7 +245,7 @@
 
       .link-footer {
         font-size: 18px;
-        color: $black;
+        color: $white;
 
         @media (max-width: $screen-md) {
           font-size: 17px;
@@ -270,7 +290,7 @@
       .hint-menue {
         display: block;
         font-size: 17px;
-        color: $black;
+        color: $white;
 
         @media (max-width: $screen-md) {
           font-size: 15px;
@@ -398,7 +418,7 @@
 .copy_sec{
   border-top: 1px solid rgba($color: $dark, $alpha: .2);
   text-align: center;
-  color: $black;
+  color: $white;
   margin-top: 35px;
   padding-top: 20px;
 }

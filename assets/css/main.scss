@@ -617,7 +617,7 @@ a:not([href]):not([tabindex]){
       @include center;
       width: 40px;
       height: 40px;
-      border-radius: 5px;
+      border-radius: 11px;
       flex-shrink: 0;
       color: white !important;
 
@@ -2353,7 +2353,7 @@ a:not([href]):not([tabindex]){
 			width: 70px;
 			height: 70px;
 			background-color: $main;
-			border-radius: 5px;
+			border-radius: 13px;
 			line-height: 70px;
 			text-align: center;
 			color: #fff;
