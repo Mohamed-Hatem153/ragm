@@ -4937,8 +4937,8 @@ html[lang=ar] .about-card .text {
   margin-left: auto;
 }
 .about-us-page .mainImg {
-  width: 100%;
-  height: 100%;
+  width: 60%;
+  height: 80%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -4964,7 +4964,7 @@ html[lang=ar] .about-card .text {
   padding-right: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
-  z-index: 100;
+  z-index: 10;
 }
 .about-us-page .text-blk.heading {
   font-size: 36px;
@@ -5027,9 +5027,9 @@ html[lang=ar] .about-us-page .cardImgContainer {
   justify-content: flex-start;
   align-items: center;
   padding-top: 10px;
-  padding-right: 15px;
+  padding-left: 15px;
   padding-bottom: 10px;
-  padding-left: 0px;
+  padding-right: 0px;
 }
 .about-us-page .text-blk.cardHeading {
   font-size: 16px;
