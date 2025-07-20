@@ -1237,7 +1237,7 @@ a:not([href]):not([tabindex]){
 /***************** End why us Section ***************/
 
 .process-section {
-    background-color: #0c0a18;
+    background-color: $main;
     color: white;
     display: flex;
     align-items: flex-start;
@@ -1408,7 +1408,7 @@ a:not([href]):not([tabindex]){
         font-size: 1rem;
         margin-bottom: 0.5rem;
         line-height: 2rem;
-        color: #93c5fd;
+        color: #5cc8ff;
         
         // .step-1 &, .step-2 & {
         //     color: #93c5fd;
@@ -1424,7 +1424,7 @@ a:not([href]):not([tabindex]){
     }
     
     p {
-        color: #cbd5e1;
+        color: $white;
         font-size: 0.875rem;
     }
 }

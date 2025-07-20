@@ -54,18 +54,20 @@
   .groups{
     width: 100%;
     .footer-img{
-      height: 118px;
-      width: 130px;
-      // object-fit: cover;
+      // height: 118px;
+      width: 200px;
+      object-fit: cover;
       // margin-bottom: 30px;
 
       @media (max-width: $screen-md) {
-        margin-bottom: 12px;
+        width: 190px;
+        // margin-bottom: 12px;
       }
 
       @media (max-width: 550px) {
-        max-height: 50px;
-        margin: 0 auto 12px;
+        width: 140px;
+        // max-height: 50px;
+        // margin: 0 auto 12px;
       }
     }
   }

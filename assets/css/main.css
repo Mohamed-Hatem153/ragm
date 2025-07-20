@@ -3769,18 +3769,18 @@ html[lang=ar] .footer .bg_left_footer {
   width: 100%;
 }
 .footer .groups .footer-img {
-  height: 118px;
-  width: 130px;
+  width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 768px) {
   .footer .groups .footer-img {
-    margin-bottom: 12px;
+    width: 190px;
   }
 }
 @media (max-width: 550px) {
   .footer .groups .footer-img {
-    max-height: 50px;
-    margin: 0 auto 12px;
+    width: 140px;
   }
 }
 .footer .footer-title {
@@ -5350,7 +5350,7 @@ html[lang=ar] .about-us-page .cardImgContainer {
 
 /***************** End why us Section ***************/
 .process-section {
-  background-color: #0c0a18;
+  background-color: #155FF6;
   color: white;
   display: flex;
   align-items: flex-start;
@@ -5502,10 +5502,10 @@ html[lang=ar] .about-us-page .cardImgContainer {
   font-size: 1rem;
   margin-bottom: 0.5rem;
   line-height: 2rem;
-  color: #93c5fd;
+  color: #5cc8ff;
 }
 .glass-card p {
-  color: #cbd5e1;
+  color: #fff;
   font-size: 0.875rem;
 }
 
