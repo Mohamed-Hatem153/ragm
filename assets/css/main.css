@@ -5390,6 +5390,10 @@ html[lang=ar] .about-us-page .cardImgContainer {
     display: block;
   }
 }
+.desktop-line img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 
 .mobile-line {
   position: absolute;
@@ -5453,11 +5457,11 @@ html[lang=ar] .about-us-page .cardImgContainer {
 
 .step-number {
   position: absolute;
-  left: 0;
+  right: 0;
   top: 0;
   width: 3.5rem;
   height: 3.5rem;
-  border-radius: 9999px;
+  border-radius: 13px;
   background-color: rgba(37, 99, 235, 0.5);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
@@ -5473,7 +5477,7 @@ html[lang=ar] .about-us-page .cardImgContainer {
 @media (min-width: 1024px) {
   .step-number {
     position: absolute;
-    left: -1.75rem;
+    right: -1.75rem;
     top: -1.25rem;
   }
 }
@@ -5482,14 +5486,14 @@ html[lang=ar] .about-us-page .cardImgContainer {
   padding: 1.5rem;
   border-radius: 1rem;
   margin-left: 2rem;
-  background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
+  background-color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 .glass-card:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.8);
   border-color: rgba(255, 255, 255, 0.2);
 }
 @media (min-width: 1024px) {
@@ -5502,10 +5506,10 @@ html[lang=ar] .about-us-page .cardImgContainer {
   font-size: 1rem;
   margin-bottom: 0.5rem;
   line-height: 2rem;
-  color: #5cc8ff;
+  color: #0344c9;
 }
 .glass-card p {
-  color: #fff;
+  color: #155FF6;
   font-size: 0.875rem;
 }
 
