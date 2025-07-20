@@ -6366,6 +6366,9 @@ html[lang=ar] .about-sec .bg_sec2 {
   background-color: #fff;
   color: #155FF6;
 }
+.section-services .single-service:hover .icon img {
+  filter: brightness(0) invert(36%) sepia(99%) saturate(447%) hue-rotate(180deg);
+}
 .section-services .single-service:hover .title {
   color: #fff;
 }
@@ -6390,6 +6393,10 @@ html[lang=ar] .about-sec .bg_sec2 {
   color: #fff;
   font-size: 30px;
   transition: all 0.3s;
+}
+.section-services .single-service .icon img {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .section-services .single-service .title {
   margin-bottom: 18px;

@@ -2333,6 +2333,9 @@ a:not([href]):not([tabindex]){
 			.icon {
 				background-color: #fff;
 				color: $main;
+        img{
+          filter: brightness(0) invert(36%) sepia(99%) saturate(447%) hue-rotate(180deg);
+        }
 			}
 			.title {
 				color: #fff;
@@ -2359,6 +2362,9 @@ a:not([href]):not([tabindex]){
 			color: #fff;
 			font-size: 30px;
 			transition: all 0.3s;
+      img{
+        object-fit: contain;
+      }
 		}
 		.title {
 			margin-bottom: 18px;
