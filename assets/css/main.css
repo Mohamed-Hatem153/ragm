@@ -6397,6 +6397,8 @@ html[lang=ar] .about-sec .bg_sec2 {
 .section-services .single-service .icon img {
   -o-object-fit: contain;
      object-fit: contain;
+  width: 45px;
+  height: 40px;
 }
 .section-services .single-service .title {
   margin-bottom: 18px;

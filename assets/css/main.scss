@@ -2364,6 +2364,8 @@ a:not([href]):not([tabindex]){
 			transition: all 0.3s;
       img{
         object-fit: contain;
+        width: 45px;
+        height: 40px;
       }
 		}
 		.title {
