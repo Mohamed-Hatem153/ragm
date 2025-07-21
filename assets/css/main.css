@@ -4369,7 +4369,6 @@ input[type=radio]:checked::after {
   top: 0;
   position: absolute;
   border: 9px solid #fff;
-  -webkit-clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
   clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
 }
 
@@ -8111,7 +8110,7 @@ a, a:hover {
 }
 .pure_tabs ul li label {
   transition: all 0.3s ease-in-out;
-  color: #929daf;
+  color: rgb(146.325, 157.275, 174.675);
   padding: 5px auto;
   text-overflow: ellipsis;
   display: block;
@@ -8124,7 +8123,7 @@ a, a:hover {
   display: none;
 }
 .pure_tabs ul li label .svg, .pure_tabs ul li label svg {
-  fill: #929daf;
+  fill: rgb(146.325, 157.275, 174.675);
   height: 1.2em;
   vertical-align: bottom;
   margin-left: 0.2em;
@@ -8132,10 +8131,10 @@ a, a:hover {
 }
 .pure_tabs ul li label:hover, .pure_tabs ul li label:focus, .pure_tabs ul li label:active {
   outline: 0;
-  color: #bec5cf;
+  color: rgb(190.3125, 196.8303571429, 207.1875);
 }
 .pure_tabs ul li label:hover svg, .pure_tabs ul li label:focus svg, .pure_tabs ul li label:active svg {
-  fill: #bec5cf;
+  fill: rgb(190.3125, 196.8303571429, 207.1875);
 }
 .pure_tabs .slider {
   position: relative;
@@ -8873,10 +8872,8 @@ html[lang=ar] .services-details .services_det_img::after {
   line-height: 1;
   font-weight: 700;
   letter-spacing: -0.025em;
-  margin-top: 1em;
-  margin-bottom: 0.5em;
   position: relative;
-  font-size: 2em;
+  font-size: 20px;
   color: #155FF6 !important;
   text-transform: uppercase;
   text-shadow: -0.03em 0.03em #FFF6E6, -0.08em 0.08em #E7DCD7;
