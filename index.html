@@ -1685,8 +1685,8 @@
     <script>
       //50 projects in 50 days Udemy
 
-      const testimonialsContainer = document.querySelector(
-        ".testimonials-container"
+      const testimonialContainer = document.querySelector(
+        ".testimonial-container"
       );
       const testimonial = document.querySelector(".testimonial");
       const userImage = document.querySelector(".user-image");
@@ -1754,9 +1754,14 @@
           idx = 0;
         }
       }
-      updateTestimonials();
-
-      setInterval(updateTestimonials, 10000);
+      if (testimonials.length == 0) {
+        testimonialContainer.innerHTML = `
+          <p class="text-center text-gray-500">لا توجد آراء عملاء حالياً</p>
+        `;
+      } else {
+        updateTestimonials();
+        setInterval(updateTestimonials, 10000);
+      }
     </script>
 
     <!-- Main Js -->
