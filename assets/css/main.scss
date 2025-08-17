@@ -4342,7 +4342,7 @@ $secondary: $accent-inactive;
 
 
 /* tab setting */
-$tab-count: 5;
+$tab-count: 6;
 $indicator-width: 50px;
 $indicator-height: 4px;
 
@@ -5641,3 +5641,132 @@ table {
     color: #fff !important;
   }
 }
+
+
+ /*----------------------*/
+
+ .customers-testimonials .item {
+     text-align: center;
+     padding: 15px;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     opacity: .2;
+     transform: scale3d(0.8, 0.8, 1);
+     transition: all 0.3s ease-in-out;
+     background-color: rgba(21, 94, 245, 0.1);
+     border-radius: 8px;
+ }
+
+ .customers-testimonials img {
+     transform-style: preserve-3d;
+     max-width: 90px;
+     margin: 0 auto 17px;
+ }
+
+ .customers-testimonials .owl-item.active.center .item {
+     opacity: 1;
+     transform: scale3d(1.0, 1.0, 1);
+ }
+
+ .author-img img {
+     width: 60px !important;
+     height: auto;
+     border-radius: 100%;
+     margin-bottom: 0 !important;
+ }
+
+ .customers-testimonials.owl-carousel .owl-dots .owl-dot.active span,
+ .customers-testimonials.owl-carousel .owl-dots .owl-dot:hover span {
+     background: $main;
+     transform: translate3d(0px, -50%, 0px) scale(0.6);
+ }
+
+ .customers-testimonials.owl-carousel .owl-dots {
+     display: flex;
+     justify-content: center;
+     height: 0;
+     background: red
+ }
+
+ .customers-testimonials.owl-carousel .owl-dots .owl-dot {
+     display: inline-block;
+     outline: none;
+ }
+
+ .customers-testimonials.owl-carousel .owl-dots .owl-dot span {
+     background: #2549838c;
+     display: block;
+     height: 20px;
+     transform: translate3d(0px, -50%, 0px) scale(0.3);
+     transform-origin: 50% 50% 0;
+     transition: all 250ms ease-out 0s;
+     width: 20px;
+     border-radius: 100%;
+ }
+
+  .customers-testimonials .item {
+    .rating2 i {
+      color: #ccc;
+      margin: 0 1px;
+      font-size: 12px;
+    }
+
+    .rating2 i.filled {
+      color: #ffb608;
+    }
+ }
+
+ /*---------------------------------------*/
+
+
+.tabs_new {
+	clear: both;
+	position: relative;   
+  // max-width: 650px;
+  // margin: 0 auto;
+   /* you can either manually set a min-height here or do it via JS ---> */
+
+   
+.tab {
+	float: right;
+}
+
+.tab label {
+	margin-left: 20px;
+	position: relative;
+	top: 0;
+	cursor: pointer;
+	color: #333;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.tab [type=radio] {
+	display: none;   
+}
+
+.tab__content {
+  position: relative;
+	top: 40px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transition: opacity .2s cubic-bezier(.42,0,.34,1.01);
+  // transition: all 0.33s cubic-bezier(0.38, 0.8, 0.32, 1.07);
+	opacity: 0;
+}
+
+[type=radio]:checked ~ label {
+  color: $main;
+	border-bottom: 2px solid $main;
+	z-index: 2;
+}
+
+[type=radio]:checked ~ label ~ .tab__content {
+	z-index: 1;
+	opacity: 1;
+}
+}
+
+

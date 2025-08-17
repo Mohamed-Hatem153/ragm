@@ -314,6 +314,27 @@ $(document).ready(function () {
       `<i class="fa-solid fa-arrow-left-long"></i>`,
     ],
   });
+
+  $('.customers-testimonials').owlCarousel({
+        loop: true,
+        center: true,
+        margin: -38,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 2500,
+        smartSpeed: 450,
+        responsive: {
+            0: {
+                items: 1
+            },
+            768: {
+                items: 2
+            },
+            1170: {
+                items: 3
+            }
+        }
+    });
 });
 
 /************ faq Collapse ***********/
@@ -331,9 +352,6 @@ $(document).ready(function () {
     }
   })
 });
-
-
-
 
 /************* Upload Files Or Img *************/
 let loginInputs = document.querySelectorAll(".img-upload-input");
@@ -478,3 +496,18 @@ function removeIcon() {
 }
 
 removeIcon();
+
+(function($, document) {
+    
+      // get tallest tab__content element
+      let height = -1;
+
+		$('.tab__content').each(function() {
+			height = height > $(this).outerHeight() ? height : $(this).outerHeight();
+         $(this).css('position', 'absolute');
+		});
+      
+      // set height of tabs + top offset
+		$('[data-tabs]').css('min-height', height + 40 + 'px');
+   
+}(jQuery, document));
