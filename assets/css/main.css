@@ -9289,22 +9289,46 @@ table .btn-small {
 
 /*---------------------------------------*/
 .tabs_new {
-  clear: both;
   position: relative;
-  /* you can either manually set a min-height here or do it via JS ---> */
-}
-.tabs_new .tab {
-  float: right;
+  display: flex;
+  align-items: start;
+  margin-bottom: 10px;
+  gap: 10px;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 .tabs_new .tab label {
-  margin-left: 20px;
   position: relative;
-  top: 0;
+  color: rgb(146.325, 157.275, 174.675);
+  padding: 5px auto;
+  text-overflow: ellipsis;
+  display: block;
   cursor: pointer;
-  color: #333;
-  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  white-space: nowrap;
+  -webkit-touch-callout: none;
   font-weight: bold;
   font-size: 15px;
+  padding-bottom: 10px;
+}
+.tabs_new .tab label br {
+  display: none;
+}
+.tabs_new .tab label .svg, .tabs_new .tab label svg {
+  fill: rgb(146.325, 157.275, 174.675);
+  height: 1.2em;
+  vertical-align: bottom;
+  margin-left: 0.2em;
+  transition: all 0.2s ease-in-out;
+}
+.tabs_new .tab label:hover, .tabs_new .tab label:focus, .tabs_new .tab label:active {
+  outline: 0;
+  color: rgb(190.3125, 196.8303571429, 207.1875);
+}
+.tabs_new .tab label:hover svg, .tabs_new .tab label:focus svg, .tabs_new .tab label:active svg {
+  fill: rgb(190.3125, 196.8303571429, 207.1875);
 }
 .tabs_new .tab [type=radio] {
   display: none;
@@ -9315,13 +9339,29 @@ table .btn-small {
   left: 0;
   right: 0;
   bottom: 0;
-  transition: opacity 0.2s cubic-bezier(0.42, 0, 0.34, 1.01);
+  transition: all 0.33s cubic-bezier(0.38, 0.8, 0.32, 1.07);
   opacity: 0;
+  overflow-y: scroll;
+  max-height: 300px;
+  overflow-x: hidden;
+  margin-top: 20px;
+}
+.tabs_new .tab__content p {
+  line-height: 2;
+  font-size: 15px;
 }
 .tabs_new [type=radio]:checked ~ label {
   color: #155FF6;
-  border-bottom: 2px solid #155FF6;
   z-index: 2;
+}
+.tabs_new [type=radio]:checked ~ label::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  width: 50%;
+  border-bottom: 3px solid #155FF6;
+  transition: width 0.25s cubic-bezier(0.42, 0, 0.34, 1.01), opacity 0.25s;
 }
 .tabs_new [type=radio]:checked ~ label ~ .tab__content {
   z-index: 1;

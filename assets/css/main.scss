@@ -5720,26 +5720,59 @@ table {
 
 
 .tabs_new {
-	clear: both;
-	position: relative;   
-  // max-width: 650px;
-  // margin: 0 auto;
-   /* you can either manually set a min-height here or do it via JS ---> */
-
-   
-.tab {
-	float: right;
-}
-
-.tab label {
-	margin-left: 20px;
+	// clear: both;
 	position: relative;
-	top: 0;
-	cursor: pointer;
-	color: #333;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 15px;
+  display: flex;
+  align-items: start;
+  margin-bottom: 10px;
+  gap: 10px;
+  justify-content: space-between;
+
+flex-wrap: nowrap;
+overflow-x: scroll;
+overflow-y: hidden;
+// scrollbar-width: thin;
+// scrollbar-color: #999 #f0f0f0;
+
+.tab{
+  label {
+    position: relative;
+        color: $secondary;
+        padding: 5px auto;
+        // overflow: hidden;
+        text-overflow: ellipsis;
+        display: block;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        white-space: nowrap;
+        -webkit-touch-callout: none;
+        // @include user-select(none);
+        font-weight: bold;
+        font-size: 15px;
+        padding-bottom: 10px;
+        
+        br {
+          display: none;
+        }
+        
+        .svg,svg {
+          fill: $secondary;
+          height: 1.2em;
+          vertical-align: bottom;
+          margin-left: 0.2em;
+          transition: all 0.2s ease-in-out;
+        }
+        
+        &:hover,
+        &:focus,
+        &:active {
+          outline: 0;
+          color: lighten($secondary, 15%);
+          svg {
+            fill: lighten($secondary, 15%);
+          }
+        }
+      }
 }
 
 .tab [type=radio] {
@@ -5752,15 +5785,35 @@ table {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	transition: opacity .2s cubic-bezier(.42,0,.34,1.01);
-  // transition: all 0.33s cubic-bezier(0.38, 0.8, 0.32, 1.07);
+  transition: all 0.33s cubic-bezier(0.38, 0.8, 0.32, 1.07);
 	opacity: 0;
+  overflow-y: scroll;
+  max-height: 300px;
+  // scrollbar-width: thin;
+  // scrollbar-color: $main #f0f0f0;
+  // &::-webkit-scrollbar {
+  //   width: 5px;
+  // }
+  overflow-x: hidden;
+  margin-top: 20px;
+  p{
+    line-height: 2;
+    font-size: 15px;
+  }
 }
 
 [type=radio]:checked ~ label {
   color: $main;
-	border-bottom: 2px solid $main;
 	z-index: 2;
+  &::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  width: 50%;
+  border-bottom: 3px solid $main;
+  transition: width .25s cubic-bezier(.42,0,.34,1.01), opacity .25s;
+  }
 }
 
 [type=radio]:checked ~ label ~ .tab__content {

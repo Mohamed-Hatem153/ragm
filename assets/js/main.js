@@ -508,6 +508,7 @@ removeIcon();
 		});
       
       // set height of tabs + top offset
-		$('[data-tabs]').css('min-height', height + 40 + 'px');
+		// $('[data-tabs]').css('min-height', height + 40 + 'px');
+		$('[data-tabs]').css('min-height', 180 + 'px');
    
 }(jQuery, document));

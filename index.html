@@ -19,8 +19,6 @@
       href="./assets/plugins/fontawesome-free-6.2.0-web/css/all.min.css"
     />
 
-    
-
     <!-- Bootstrap 5 -->
     <link
       rel="stylesheet"
@@ -62,8 +60,8 @@
   <body>
     <!-- start to loader -->
     <div class="loader-container">
-            <img loading="lazy" src="./assets/imgs/loader.gif" alt="">
-        </div>
+      <img loading="lazy" src="./assets/imgs/loader.gif" alt="" />
+    </div>
 
     <a href="tel:+966509009516" target="_blank" class="floating-button call">
       <i class="fa-solid fa-phone icon phone"></i>
@@ -78,20 +76,24 @@
 
     <!-- Start Social Section -->
     <div class="social-icon">
-        <div class="text">تابعنا عبر</div>
-        <span></span>
-        <a href="#" class="social">
-            <i class="fa-brands fa-facebook-f ic"></i>
-        </a>
-        <a href="#" class="social">
-            <img src="./assets/imgs/icons/icons8-twitterx-30.png" class="ic" alt="">
-        </a>
-        <a href="#" class="social">
-            <i class="fa-brands fa-instagram ic"></i>
-        </a>
-        <a href="#" class="social">
-            <i class="fa-brands fa-youtube ic"></i>
-        </a>
+      <div class="text">تابعنا عبر</div>
+      <span></span>
+      <a href="#" class="social">
+        <i class="fa-brands fa-facebook-f ic"></i>
+      </a>
+      <a href="#" class="social">
+        <img
+          src="./assets/imgs/icons/icons8-twitterx-30.png"
+          class="ic"
+          alt=""
+        />
+      </a>
+      <a href="#" class="social">
+        <i class="fa-brands fa-instagram ic"></i>
+      </a>
+      <a href="#" class="social">
+        <i class="fa-brands fa-youtube ic"></i>
+      </a>
     </div>
     <!-- End Social Section -->
 
@@ -600,17 +602,11 @@
           </div>
         </div>
 
-        <div class="pure_tabs">
-          <input type="radio" id="tab1" name="tab-control" checked />
-          <input type="radio" id="tab2" name="tab-control" />
-          <input type="radio" id="tab3" name="tab-control" />
-          <input type="radio" id="tab4" name="tab-control" />
-          <!-- <input type="radio" id="tab5" name="tab-control"> -->
-          <input type="radio" id="tab6" name="tab-control" />
-          <input type="radio" id="tab7" name="tab-control" />
-          <ul>
-            <li title="Features">
-              <label for="tab1" role="button">
+        <div class="container">
+          <div data-tabs class="tabs_new mt-5">
+            <div class="tab">
+              <input type="radio" name="tabgroup" id="tab-1" checked />
+              <label for="tab-1">
                 <img
                   loading="lazy"
                   src="./assets/imgs/icons/p_icon1.svg"
@@ -618,178 +614,153 @@
                   class="svg"
                 />
                 <br /><span>دعم فني متوفر مجانًا</span>
-                </label
-              >
-            </li>
-            <li title="Delivery Contents">
-              <label for="tab2" role="button">
+              </label>
+              <div class="tab__content">
+                <!-- <h4>Tab heading 1</h4> -->
+                <p>
+                  احصل على دعم فني مجاني من فريق مكرَّس للرد على استفساراتكم
+                  ومساعدتكم في حال واجهتم أي مشكلات؛ عبر التواصل من خلال الهاتف
+                  أو البريد الإلكتروني على مدار اليوم، وذلك لضمان حصولكم على
+                  تجربة مثالية عند استخدام نظام رقم.
+                </p>
+              </div>
+            </div>
+            <div class="tab">
+              <input type="radio" name="tabgroup" id="tab-2" />
+              <label for="tab-2">
                 <img
                   loading="lazy"
                   src="./assets/imgs/icons/p_icon2.svg"
                   alt=""
                   class="svg"
                 />
-                <br /><span>الأمان والحماية</span></label
-              >
-            </li>
-            <li title="Shipping">
-              <label for="tab3" role="button">
+                <br /><span>الأمان والحماية</span>
+              </label>
+              <div class="tab__content">
+                <!-- <h4>Tab heading 2</h4> -->
+                <p>
+                  يولي نظام رقم اهتمامًا بالغًا بسلامة بياناتكم على خوادمنا، لذا
+                  نستخدم خوادم مؤمنة بالكامل ومشفرة بتقنية SSL 256 bit مع عدة
+                  طبقات من الحماية، إلى جانب وجود الخوادم في قارتين مختلفتين مع
+                  إجراءات سلامة إضافية لمواقعها وقيود قوية على صلاحية الوصول إلى
+                  البيانات، بالإضافة إلى عمليات نسخ احتياطي دورية.
+                </p>
+              </div>
+            </div>
+            <div class="tab">
+              <input type="radio" name="tabgroup" id="tab-3" />
+              <label for="tab-3">
                 <img
                   loading="lazy"
                   src="./assets/imgs/icons/p_icon3.svg"
                   alt=""
                   class="svg"
                 />
-                <br /><span>تجربة مخصصة بالكامل</span></label
-              >
-            </li>
-            <li title="Returns">
-              <label for="tab4" role="button">
+                <br /><span>تجربة مخصصة بالكامل</span>
+              </label>
+              <div class="tab__content">
+                <!-- <h4>Tab heading 3</h4> -->
+                <p>
+                  خصِّص النظام بما يتوافق مع مجال عملك من خلال تفعيل التطبيقات
+                  المطلوبة فقط، وخصِّص واجهة الاستخدام لتلائم هوية علامتك
+                  التجارية وألوانها، إلى جانب التعديل في قوالب الفواتير وعروض
+                  الأسعار وغيرها من المطبوعات للحصول على تجربة مثالية مخصصة
+                  لاحتياجاتك.
+                </p>
+              </div>
+            </div>
+            <div class="tab">
+              <input type="radio" name="tabgroup" id="tab-4" />
+              <label for="tab-4">
                 <img
                   loading="lazy"
                   src="./assets/imgs/icons/p_icon4.svg"
                   alt=""
                   class="svg"
                 />
-                <br /><span>واجهة سهلة الاستخدام</span></label
-              >
-            </li>
-            <!-- <li title="Time"><label for="tab5" role="button"><svg viewBox="0 0 24 24">
-    <path d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
-</svg><br><span>توفير الوقت
-والجهد</span></label></li> -->
-            <li title="Place">
-              <label for="tab6" role="button">
+                <br /><span>واجهة سهلة الاستخدام</span>
+              </label>
+              <div class="tab__content">
+                <!-- <h4>Tab heading 4</h4> -->
+                <p>
+                  أدِر أعمالك بسهولة مع العديد من الخصائص والأدوات المضمّنة في
+                  واجهة سهلة الاستخدام بخطوات بسيطة، إذ لا تحتاج إلى امتلاك
+                  معرفة عميقة بأنظمة تخطيط الموارد المؤسسية أو طرق المحاسبة
+                  المعقدة من أجل العمل على أي من تطبيقات النظام.
+                </p>
+              </div>
+            </div>
+            <div class="tab">
+              <input type="radio" name="tabgroup" id="tab-5" />
+              <label for="tab-5">
                 <img
                   loading="lazy"
                   src="./assets/imgs/icons/p_icon6.svg"
                   alt=""
                   class="svg"
                 />
-                <br /><span>من أي مكان وفي أي وقت</span></label
-              >
-            </li>
-            <li title="Place">
-              <label for="tab7" role="button">
-                <img
+                <br /><span>من أي مكان وفي أي وقت</span>
+              </label>
+              <div class="tab__content">
+                <!-- <h4>Tab heading 5</h4> -->
+                <p>
+                  لكونه نظامًا سحابيًا على خوادم مؤمنة بالكامل، فستجد رقم في
+                  متناول يديك دائماً لمساعدتك في إدارة أعمالك بفعالية على مدار
+                  الساعة وطوال أيام الأسبوع، مع إمكانية إصدار الفواتير عبر تطبيق
+                  سطح المكتب في حال انقطاع الاتصال بالإنترنت. قم بمتابعة أعمالك
+                  وأدِرها من أي مكان وفي أي وقت عبر أي جهاز متاح لديك.
+                </p>
+              </div>
+            </div>
+            <div class="tab">
+              <input type="radio" name="tabgroup" id="tab-6" />
+              <label for="tab-6"
+                ><img
                   loading="lazy"
                   src="./assets/imgs/icons/p_icon6.svg"
                   alt=""
                   class="svg"
                 />
-                <br /><span>تاب المهندس ابراهيم</span></label
+                <br /><span>تاب اضافيه</span></label
               >
-            </li>
-          </ul>
-
-          <div class="slider"><div class="indicator"></div></div>
-          <div class="content">
-            <section>
-              <h2>دعم فني متوفر مجانًا</h2>
-              احصل على دعم فني مجاني من فريق مكرَّس للرد على استفساراتكم
-              ومساعدتكم في حال واجهتم أي مشكلات؛ عبر التواصل من خلال الهاتف أو
-              البريد الإلكتروني على مدار اليوم، وذلك لضمان حصولكم على تجربة
-              مثالية عند استخدام نظام رقم.
-            </section>
-            <section>
-              <h2>الأمان والحماية</h2>
-              يولي نظام رقم اهتمامًا بالغًا بسلامة بياناتكم على خوادمنا، لذا
-              نستخدم خوادم مؤمنة بالكامل ومشفرة بتقنية SSL 256 bit مع عدة طبقات
-              من الحماية، إلى جانب وجود الخوادم في قارتين مختلفتين مع إجراءات
-              سلامة إضافية لمواقعها وقيود قوية على صلاحية الوصول إلى البيانات،
-              بالإضافة إلى عمليات نسخ احتياطي دورية.
-            </section>
-            <section>
-              <h2>تجربة مخصصة بالكامل</h2>
-              خصِّص النظام بما يتوافق مع مجال عملك من خلال تفعيل التطبيقات
-              المطلوبة فقط، وخصِّص واجهة الاستخدام لتلائم هوية علامتك التجارية
-              وألوانها، إلى جانب التعديل في قوالب الفواتير وعروض الأسعار وغيرها
-              من المطبوعات للحصول على تجربة مثالية مخصصة لاحتياجاتك.
-            </section>
-            <section>
-              <h2>واجهة سهلة الاستخدام</h2>
-              أدِر أعمالك بسهولة مع العديد من الخصائص والأدوات المضمّنة في واجهة
-              سهلة الاستخدام بخطوات بسيطة، إذ لا تحتاج إلى امتلاك معرفة عميقة
-              بأنظمة تخطيط الموارد المؤسسية أو طرق المحاسبة المعقدة من أجل العمل
-              على أي من تطبيقات النظام.
-            </section>
-            <!-- <section>
-          <h2>توفير الوقت
-والجهد</h2>ابع مؤشرات أعمالك بدقة وأدِر عملياتك بفعالية في خطوات بسيطة من دون استغراق الكثير من الوقت أو بذل مجهود كبير في تنفيذها، وذلك بفضل واجهة المستخدم البسيطة والعمليات المؤتمتة التي يتميز بها نظام رقم.</section> -->
-            <section>
-              <h2>من أي مكان وفي أي وقت</h2>
-              لكونه نظامًا سحابيًا على خوادم مؤمنة بالكامل، فستجد رقم في متناول
-              يديك دائماً لمساعدتك في إدارة أعمالك بفعالية على مدار الساعة وطوال
-              أيام الأسبوع، مع إمكانية إصدار الفواتير عبر تطبيق سطح المكتب في
-              حال انقطاع الاتصال بالإنترنت. قم بمتابعة أعمالك وأدِرها من أي مكان
-              وفي أي وقت عبر أي جهاز متاح لديك.
-            </section>
-            <section>
-              <h2>تاب المهندس ابراهيم</h2>
-              تاب مثال للتوضيح
-            </section>
+              <div class="tab__content">
+                <!-- <h4>Tab heading 6</h4> -->
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Officia exercitationem veritatis vero eaque. Nam totam dolorem
+                  sapiente ullam non sed nostrum praesentium voluptatem, ad quam
+                  libero deserunt nemo fuga hic repudiandae veritatis
+                  cupiditate, mollitia recusandae!
+                </p>
+              </div>
+            </div>
+            <div class="tab">
+              <input type="radio" name="tabgroup" id="tab-7" />
+              <label for="tab-7"
+                ><img
+                  loading="lazy"
+                  src="./assets/imgs/icons/p_icon6.svg"
+                  alt=""
+                  class="svg"
+                />
+                <br /><span>تاب اضافيه</span></label
+              >
+              <div class="tab__content">
+                <!-- <h4>Tab heading 6</h4> -->
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Officia exercitationem veritatis vero eaque. Nam totam dolorem
+                  sapiente ullam non sed nostrum praesentium voluptatem, ad quam
+                  libero deserunt nemo fuga hic repudiandae veritatis
+                  cupiditate, mollitia recusandae!
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <!--End Tabs Section -->
-
-
-  <div class="container">
-  <div data-tabs class="tabs_new">
-      <div class="tab">
-         <input type="radio" name="tabgroup" id="tab-1" checked>
-         <label for="tab-1">Tab 1</label>
-         <div class="tab__content">
-            <h4>Tab heading 1</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt libero ipsum, veniam magni modi exercitationem debitis ducimus assumenda ratione corporis, illum eius, laborum tempore cumque amet id perspiciatis nostrum unde?</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum, maiores.</p>
-         </div> 
-      </div>
-      <div class="tab">
-         <input type="radio" name="tabgroup" id="tab-2">
-         <label for="tab-2">Tab 2</label>
-         <div class="tab__content">
-            <h4>Tab heading 2</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur odio cum eveniet excepturi eum provident molestias ad ipsa unde dignissimos illo porro animi earum aliquam perspiciatis id omnis, adipisci incidunt. Qui, beatae. Beatae animi totam obcaecati at quae, iste facere fuga nemo pariatur esse nihil?</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque commodi eos voluptatem numquam pariatur deleniti repellat fugiat eligendi nulla molestiae sunt praesentium vero sequi distinctio error quibusdam maiores natus magnam, explicabo hic sed alias dolores, quis eum! Reprehenderit atque cupiditate dolorum? Saepe, doloribus veniam? Nulla!</p>
-         </div> 
-      </div>
-      <div class="tab">
-         <input type="radio" name="tabgroup" id="tab-3">
-         <label for="tab-3">Tab 3</label>
-         <div class="tab__content">
-            <h4>Tab heading 3</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam officiis voluptas maiores deserunt ullam aliquam?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, officia accusantium quod fuga porro eius animi earum excepturi omnis! Reprehenderit!</p>
-         </div> 
-      </div>
-      <div class="tab">
-         <input type="radio" name="tabgroup" id="tab-4">
-         <label for="tab-4">Tab 4</label>
-         <div class="tab__content">
-            <h4>Tab heading 4</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia exercitationem veritatis vero eaque. Nam totam dolorem sapiente ullam non sed nostrum praesentium voluptatem, ad quam libero deserunt nemo fuga hic repudiandae veritatis cupiditate, mollitia recusandae!</p>
-         </div> 
-      </div>
-      <div class="tab">
-         <input type="radio" name="tabgroup" id="tab-5">
-         <label for="tab-5">Tab 5</label>
-         <div class="tab__content">
-            <h4>Tab heading 5</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia exercitationem veritatis vero eaque. Nam totam dolorem sapiente ullam non sed nostrum praesentium voluptatem, ad quam libero deserunt nemo fuga hic repudiandae veritatis cupiditate, mollitia recusandae!</p>
-         </div> 
-      </div>
-      <div class="tab">
-         <input type="radio" name="tabgroup" id="tab-6">
-         <label for="tab-6">Tab 6</label>
-         <div class="tab__content">
-            <h4>Tab heading 6</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia exercitationem veritatis vero eaque. Nam totam dolorem sapiente ullam non sed nostrum praesentium voluptatem, ad quam libero deserunt nemo fuga hic repudiandae veritatis cupiditate, mollitia recusandae!</p>
-         </div> 
-      </div>
-    </div>    
-</div>
 
     <!-- Start Video Section -->
     <div class="about-sec sec-padding" id="about">
@@ -1322,23 +1293,53 @@
 
     <!-- Start Testimonial Section -->
     <section class="sec-marg" id="said-about-us">
-            <div class="container py-5">
-               <div class="header-section text-center">
-                  <h4 class="main-title mx-auto" data-aos="fade-up" data-aos-delay="200">
-                    أراء العملاء
-                    <span class="line"></span>
-                  </h4>
-                  <h3 class="sec-title mx-auto wow fadeInUp">
-                    الاف المستخدمين يثقون فى رقم
-                  </h3>
-                  <p class="text fw-bold text-center mb-3 wow fadeInUp">
-                    <span style="color: #2563eb; font-weight: bold; font-size: 19px"
-                      >4.5</span
-                    >
-                    تقييمات برنامج رقم .. الاف الفواتير تصدر يوميا من برنامج رقم
-                  </p>
+      <div class="container py-5">
+        <div class="header-section text-center">
+          <h4
+            class="main-title mx-auto"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            أراء العملاء
+            <span class="line"></span>
+          </h4>
+          <h3 class="sec-title mx-auto wow fadeInUp">
+            الاف المستخدمين يثقون فى رقم
+          </h3>
+          <p class="text fw-bold text-center mb-3 wow fadeInUp">
+            <span style="color: #2563eb; font-weight: bold; font-size: 19px"
+              >4.5</span
+            >
+            تقييمات برنامج رقم .. الاف الفواتير تصدر يوميا من برنامج رقم
+          </p>
+          <div
+            class="rating2 d-flex justify-content-center align-items-center gap-2 wow fadeInUp"
+          >
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star filled"></i>
+            <i class="fas fa-star filled"></i>
+          </div>
+        </div>
+        <div class="owl-carousel customers-testimonials">
+          <div class="item">
+            <div class="p-4">
+              <p class="mb-4 grey-color">
+                في عالم شركاء كلاسيرا جمعنا وتحت مظلة واحدة أكثر من 50 شريكاً
+                عالمياً لتقدم خدمات متكاملة وعبر نظامٍ واحدٍ وبأبسط الطرق، ومن
+                أمثلة شركاتنا المتنوعة عالمياً
+              </p>
+              <hr />
+              <div class="d-flex align-items-center gap-2">
+                <div class="author-img mr-10">
+                  <img src="assets/imgs/saudi_arabian_man-512.webp" />
+                </div>
+                <div>
+                  <h6 class="m-0 f-b main-color">Kevin Rich</h6>
+                  <p class="small font-medium grey-color">Web Developer</p>
                   <div
-                    class="rating2 d-flex justify-content-center align-items-center gap-2 wow fadeInUp"
+                    class="rating2 d-flex justify-content-center align-items-center gap-1 wow fadeInUp"
                   >
                     <i class="fas fa-star filled"></i>
                     <i class="fas fa-star filled"></i>
@@ -1347,77 +1348,69 @@
                     <i class="fas fa-star filled"></i>
                   </div>
                 </div>
-                <div class="owl-carousel customers-testimonials">
-                    <div class="item">
-                        <div class="p-4">
-                            <p class="mb-4 grey-color">في عالم شركاء كلاسيرا جمعنا وتحت مظلة واحدة أكثر من 50 شريكاً عالمياً لتقدم خدمات متكاملة وعبر نظامٍ واحدٍ وبأبسط الطرق، ومن أمثلة شركاتنا المتنوعة عالمياً </p>
-                            <hr>
-                            <div class="d-flex align-items-center gap-2">
-                                <div class="author-img mr-10"> <img src="assets/imgs/saudi_arabian_man-512.webp"> </div>
-                                <div>
-                                    <h6 class="m-0 f-b main-color">Kevin Rich</h6>
-                                    <p class="small font-medium grey-color">Web Developer</p>
-                                    <div
-                                    class="rating2 d-flex justify-content-center align-items-center gap-1 wow fadeInUp"
-                                  >
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                  </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="p-4">
-                            <p class="mb-4 grey-color">في عالم شركاء كلاسيرا جمعنا وتحت مظلة واحدة أكثر من 50 شريكاً عالمياً لتقدم خدمات متكاملة وعبر نظامٍ واحدٍ وبأبسط الطرق، ومن أمثلة شركاتنا المتنوعة عالمياً </p>
-                            <hr>
-                            <div class="d-flex align-items-center gap-2">
-                                <div class="author-img mr-10"> <img src="assets/imgs/saudi_arabian_man-512.webp"> </div>
-                                <div>
-                                    <h6 class="m-0 f-b main-color">Kevin Rich</h6>
-                                    <p class="small font-medium grey-color">Web Developer</p>
-                                    <div
-                                    class="rating2 d-flex justify-content-center align-items-center gap-1 wow fadeInUp"
-                                  >
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                  </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="p-4">
-                            <p class="mb-4 grey-color">في عالم شركاء كلاسيرا جمعنا وتحت مظلة واحدة أكثر من 50 شريكاً عالمياً لتقدم خدمات متكاملة وعبر نظامٍ واحدٍ وبأبسط الطرق، ومن أمثلة شركاتنا المتنوعة عالمياً </p>
-                            <hr>
-                            <div class="d-flex align-items-center gap-2">
-                                <div class="author-img mr-10"> <img src="assets/imgs/saudi_arabian_man-512.webp"> </div>
-                                <div>
-                                    <h6 class="m-0 f-b main-color">Kevin Rich</h6>
-                                    <p class="small font-medium grey-color">Web Developer</p>
-                                    <div
-                                    class="rating2 d-flex justify-content-center align-items-center gap-1 wow fadeInUp"
-                                  >
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                  </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
+
+          <div class="item">
+            <div class="p-4">
+              <p class="mb-4 grey-color">
+                في عالم شركاء كلاسيرا جمعنا وتحت مظلة واحدة أكثر من 50 شريكاً
+                عالمياً لتقدم خدمات متكاملة وعبر نظامٍ واحدٍ وبأبسط الطرق، ومن
+                أمثلة شركاتنا المتنوعة عالمياً
+              </p>
+              <hr />
+              <div class="d-flex align-items-center gap-2">
+                <div class="author-img mr-10">
+                  <img src="assets/imgs/saudi_arabian_man-512.webp" />
+                </div>
+                <div>
+                  <h6 class="m-0 f-b main-color">Kevin Rich</h6>
+                  <p class="small font-medium grey-color">Web Developer</p>
+                  <div
+                    class="rating2 d-flex justify-content-center align-items-center gap-1 wow fadeInUp"
+                  >
+                    <i class="fas fa-star filled"></i>
+                    <i class="fas fa-star filled"></i>
+                    <i class="fas fa-star filled"></i>
+                    <i class="fas fa-star filled"></i>
+                    <i class="fas fa-star filled"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="p-4">
+              <p class="mb-4 grey-color">
+                في عالم شركاء كلاسيرا جمعنا وتحت مظلة واحدة أكثر من 50 شريكاً
+                عالمياً لتقدم خدمات متكاملة وعبر نظامٍ واحدٍ وبأبسط الطرق، ومن
+                أمثلة شركاتنا المتنوعة عالمياً
+              </p>
+              <hr />
+              <div class="d-flex align-items-center gap-2">
+                <div class="author-img mr-10">
+                  <img src="assets/imgs/saudi_arabian_man-512.webp" />
+                </div>
+                <div>
+                  <h6 class="m-0 f-b main-color">Kevin Rich</h6>
+                  <p class="small font-medium grey-color">Web Developer</p>
+                  <div
+                    class="rating2 d-flex justify-content-center align-items-center gap-1 wow fadeInUp"
+                  >
+                    <i class="fas fa-star filled"></i>
+                    <i class="fas fa-star filled"></i>
+                    <i class="fas fa-star filled"></i>
+                    <i class="fas fa-star filled"></i>
+                    <i class="fas fa-star filled"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- End Testimonial Section -->
 
